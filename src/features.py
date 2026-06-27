@@ -1,4 +1,6 @@
 from datetime import datetime
+from jd_parser import parse_job_description
+JD_INFO = parse_job_description("../data/raw/job_description.docx")
 JD_SKILL_MAP = {
     "python": ["python"],
     "retrieval": ["retrieval", "bm25", "rag"],
@@ -45,10 +47,27 @@ def qualification_features(candidate):
     title = profile.get("current_title", "").lower()
 
     title_score = 0
+    jd_seniority = JD_INFO["seniority"]
+
+    # base title relevance
     if "engineer" in title:
-        title_score = 1
+        title_score += 0.5
     elif "developer" in title:
-        title_score = 0.8
+        title_score += 0.4
+
+    # seniority alignment
+    if jd_seniority == "staff":
+        if "staff" in title or "principal" in title:
+            title_score += 0.5
+
+    elif jd_seniority == "senior":
+        if "senior" in title:
+            title_score += 0.5
+
+    else:
+        title_score += 0.3
+
+    title_score = min(title_score, 1)
 
     return {
         "years_experience": years_exp,
@@ -75,6 +94,7 @@ def contradiction_features(candidate):
     skills = candidate["skills"]
 
     contradictions = 0
+    reasons = []
 
     title = profile.get("current_title", "").lower()
     years_exp = profile.get("years_of_experience", 0)
@@ -86,14 +106,16 @@ def contradiction_features(candidate):
     # Contradiction 1
     if ("ai" in title or "ml" in title) and github < 20:
         contradictions += 1
+        reasons.append("AI/ML title but weak GitHub activity")
 
     # Contradiction 2
     if open_to_work and response < 0.4:
         contradictions += 1
-
+        reasons.append("Open to work but low recruiter response")
     # Contradiction 3
     if "staff" in title and years_exp < 5:
         contradictions += 1
+        reasons.append("Staff title but low experience")
 
     # Contradiction 4
     for skill in skills:
@@ -105,6 +127,7 @@ def contradiction_features(candidate):
 
             if endorsements > 20 and score < 50:
                 contradictions += 1
+                reasons.append("High endorsements but weak skill assessment")
                 break
 
     saves = signals.get("saved_by_recruiters_30d", 0)
@@ -112,9 +135,11 @@ def contradiction_features(candidate):
     # Contradiction 5
     if saves > 10 and response < 0.5:
         contradictions += 1
+        reasons.append("High recruiter demand but low engagement")
 
     return {
-        "contradiction_score": contradictions
+        "contradiction_score": contradictions,
+        "reasons": reasons
     }
 def confidence_features(candidate):
     signals = candidate["redrob_signals"]
