@@ -1,101 +1,101 @@
 candidate_id,rank,score,reasoning
-CAND_0088025,1,0.8014,Staff Machine Learning Engineer with 8.6 yrs; 6 AI core skills; response rate 0.83.
-CAND_0071974,2,0.8002,Senior AI Engineer with 7.8 yrs; 6 AI core skills; response rate 0.76.
-CAND_0055992,3,0.7954,AI Engineer with 16.9 yrs; 5 AI core skills; response rate 0.72.
-CAND_0076163,4,0.7845,NLP Engineer with 6.9 yrs; 1 AI core skills; response rate 0.84.
-CAND_0095619,5,0.7756,NLP Engineer with 15.6 yrs; 5 AI core skills; response rate 0.90.
-CAND_0064326,6,0.7709,Search Engineer with 7.6 yrs; 1 AI core skills; response rate 0.94.
-CAND_0077337,7,0.7707,Staff Machine Learning Engineer with 7.0 yrs; 5 AI core skills; response rate 0.95.
-CAND_0041669,8,0.7622,Recommendation Systems Engineer with 8.0 yrs; 4 AI core skills; response rate 0.77.
-CAND_0017960,9,0.7547,Recommendation Systems Engineer with 7.7 yrs; 3 AI core skills; response rate 0.72.
-CAND_0006567,10,0.7531,Senior AI Engineer with 7.9 yrs; 2 AI core skills; response rate 0.79.
-CAND_0051615,11,0.7504,Search Engineer with 4.6 yrs; 6 AI core skills; response rate 0.88.
-CAND_0061257,12,0.7503,Staff Machine Learning Engineer with 8.0 yrs; 3 AI core skills; response rate 0.87.
-CAND_0020708,13,0.7501,Search Engineer with 4.2 yrs; 3 AI core skills; response rate 0.84.
-CAND_0035879,14,0.7499,AI Research Engineer with 4.5 yrs; 4 AI core skills; response rate 0.82.
-CAND_0039754,15,0.7497,Senior Applied Scientist with 16.2 yrs; 5 AI core skills; response rate 0.81.
-CAND_0046064,16,0.747,Senior NLP Engineer with 8.9 yrs; 1 AI core skills; response rate 0.78.
-CAND_0076482,17,0.7361,ML Engineer with 6.6 yrs; 5 AI core skills; response rate 0.86.
-CAND_0002025,18,0.7341,Senior AI Engineer with 5.9 yrs; 3 AI core skills; response rate 0.80.
-CAND_0091534,19,0.7288,AI Engineer with 16.6 yrs; 1 AI core skills; response rate 0.84.
-CAND_0080766,20,0.7286,Staff Machine Learning Engineer with 8.8 yrs; 4 AI core skills; response rate 0.66.
-CAND_0052682,21,0.7277,NLP Engineer with 6.6 yrs; 3 AI core skills; response rate 0.88.
-CAND_0048375,22,0.7258,Computer Vision Engineer with 4.4 yrs; 3 AI core skills; response rate 0.83.
-CAND_0039383,23,0.7247,Applied ML Engineer with 7.1 yrs; 4 AI core skills; response rate 0.61.
-CAND_0079387,24,0.724,AI Engineer with 6.9 yrs; 2 AI core skills; response rate 0.81.
-CAND_0013536,25,0.7216,Applied ML Engineer with 14.1 yrs; 6 AI core skills; response rate 0.87.
-CAND_0011687,26,0.7193,Senior NLP Engineer with 7.8 yrs; 2 AI core skills; response rate 0.89.
-CAND_0003791,27,0.7145,ML Engineer with 6.6 yrs; 3 AI core skills; response rate 0.66.
-CAND_0008295,28,0.7136,AI Research Engineer with 6.5 yrs; 2 AI core skills; response rate 0.89.
-CAND_0052328,29,0.7133,Recommendation Systems Engineer with 6.5 yrs; 2 AI core skills; response rate 0.79.
-CAND_0008425,30,0.7123,Senior NLP Engineer with 7.8 yrs; 3 AI core skills; response rate 0.66.
-CAND_0096142,31,0.7095,Applied ML Engineer with 5.0 yrs; 4 AI core skills; response rate 0.84.
-CAND_0028793,32,0.7075,Search Engineer with 7.2 yrs; 4 AI core skills; response rate 0.57.
-CAND_0081480,33,0.7074,Computer Vision Engineer with 5.6 yrs; 3 AI core skills; response rate 0.85.
-CAND_0018499,34,0.707,Senior Machine Learning Engineer with 7.2 yrs; 4 AI core skills; response rate 0.61.
-CAND_0093547,35,0.7067,Senior Machine Learning Engineer with 2.9 yrs; 4 AI core skills; response rate 0.75.
-CAND_0053591,36,0.7063,AI Engineer with 5.3 yrs; 2 AI core skills; response rate 0.81.
-CAND_0081686,37,0.7059,Search Engineer with 6.0 yrs; 3 AI core skills; response rate 0.91.
-CAND_0066999,38,0.7058,Recommendation Systems Engineer with 5.9 yrs; 5 AI core skills; response rate 0.63.
-CAND_0054546,39,0.7049,AI Research Engineer with 4.9 yrs; 1 AI core skills; response rate 0.92.
-CAND_0001930,40,0.7048,Senior Software Engineer (ML) with 6.9 yrs; 5 AI core skills; response rate 0.65.
-CAND_0083307,41,0.7027,Search Engineer with 7.8 yrs; 5 AI core skills; response rate 0.70.
-CAND_0081846,42,0.702,Lead AI Engineer with 6.7 yrs; 5 AI core skills; response rate 0.73.
-CAND_0050876,43,0.7019,Applied ML Engineer with 6.0 yrs; 2 AI core skills; response rate 0.67.
-CAND_0024990,44,0.6997,Junior ML Engineer with 5.2 yrs; 4 AI core skills; response rate 0.83.
-CAND_0049538,45,0.6996,Applied ML Engineer with 5.8 yrs; 4 AI core skills; response rate 0.72.
-CAND_0074735,46,0.6996,Applied ML Engineer with 5.5 yrs; 5 AI core skills; response rate 0.77.
-CAND_0018722,47,0.6972,Recommendation Systems Engineer with 6.6 yrs; 1 AI core skills; response rate 0.79.
-CAND_0052431,48,0.697,ML Engineer with 5.3 yrs; 1 AI core skills; response rate 0.85.
-CAND_0010603,49,0.6962,ML Engineer with 5.3 yrs; 4 AI core skills; response rate 0.94.
-CAND_0003609,50,0.6955,Senior Software Engineer (ML) with 6.1 yrs; 4 AI core skills; response rate 0.50.
-CAND_0037566,51,0.6955,Machine Learning Engineer with 6.9 yrs; 4 AI core skills; response rate 0.50.
-CAND_0019480,52,0.6953,NLP Engineer with 2.8 yrs; 1 AI core skills; response rate 0.87.
-CAND_0014440,53,0.6952,Recommendation Systems Engineer with 6.4 yrs; 2 AI core skills; response rate 0.64.
-CAND_0074225,54,0.6948,Machine Learning Engineer with 4.3 yrs; 2 AI core skills; response rate 0.91.
-CAND_0050553,55,0.6917,ML Engineer with 3.6 yrs; 2 AI core skills; response rate 0.95.
-CAND_0058146,56,0.6912,AI Research Engineer with 5.1 yrs; 4 AI core skills; response rate 0.79.
-CAND_0011125,57,0.6907,Junior ML Engineer with 6.6 yrs; 4 AI core skills; response rate 0.58.
-CAND_0007009,58,0.6905,Recommendation Systems Engineer with 7.9 yrs; 2 AI core skills; response rate 0.62.
-CAND_0093193,59,0.6905,Senior Machine Learning Engineer with 7.9 yrs; 4 AI core skills; response rate 0.61.
-CAND_0080603,60,0.6901,Senior Data Engineer with 5.8 yrs; 2 AI core skills; response rate 0.76.
-CAND_0044883,61,0.6886,AI Engineer with 6.3 yrs; 2 AI core skills; response rate 0.84.
-CAND_0090584,62,0.6879,ML Engineer with 5.1 yrs; 4 AI core skills; response rate 0.64.
-CAND_0016163,63,0.6863,Applied ML Engineer with 6.7 yrs; 4 AI core skills; response rate 0.72.
-CAND_0058783,64,0.6862,Computer Vision Engineer with 3.2 yrs; 2 AI core skills; response rate 0.92.
-CAND_0068932,65,0.6854,ML Engineer with 5.2 yrs; 2 AI core skills; response rate 0.82.
-CAND_0012957,66,0.6851,Search Engineer with 4.9 yrs; 5 AI core skills; response rate 0.67.
-CAND_0027801,67,0.6835,NLP Engineer with 7.4 yrs; 2 AI core skills; response rate 0.65.
-CAND_0046353,68,0.6825,ML Engineer with 6.4 yrs; 4 AI core skills; response rate 0.73.
-CAND_0058688,69,0.6817,AI Engineer with 6.7 yrs; 3 AI core skills; response rate 0.74.
-CAND_0077285,70,0.677,Recommendation Systems Engineer with 5.5 yrs; 6 AI core skills; response rate 0.56.
-CAND_0078042,71,0.6769,Applied ML Engineer with 4.7 yrs; 2 AI core skills; response rate 0.91.
-CAND_0070398,72,0.6755,Machine Learning Engineer with 7.2 yrs; 5 AI core skills; response rate 0.60.
-CAND_0030031,73,0.6751,AI Engineer with 5.7 yrs; 4 AI core skills; response rate 0.94.
-CAND_0061339,74,0.6745,Search Engineer with 4.2 yrs; 5 AI core skills; response rate 0.90.
-CAND_0052195,75,0.6744,Computer Vision Engineer with 6.3 yrs; 3 AI core skills; response rate 0.69.
-CAND_0069905,76,0.6744,Applied ML Engineer with 6.6 yrs; 1 AI core skills; response rate 0.78.
-CAND_0075481,77,0.6741,AI Research Engineer with 3.9 yrs; 3 AI core skills; response rate 0.88.
-CAND_0059504,78,0.6739,Junior ML Engineer with 3.3 yrs; 6 AI core skills; response rate 0.83.
-CAND_0037966,79,0.6738,Senior Software Engineer with 7.9 yrs; 2 AI core skills; response rate 0.62.
-CAND_0070892,80,0.6734,Frontend Engineer with 8.3 yrs; 1 AI core skills; response rate 0.83.
-CAND_0045999,81,0.6723,Cloud Engineer with 9.6 yrs; 1 AI core skills; response rate 0.53.
-CAND_0024004,82,0.6716,Senior Software Engineer with 7.9 yrs; 1 AI core skills; response rate 0.76.
-CAND_0055951,83,0.6704,Analytics Engineer with 7.2 yrs; 2 AI core skills; response rate 0.78.
-CAND_0054100,84,0.67,Junior ML Engineer with 6.0 yrs; 3 AI core skills; response rate 0.79.
-CAND_0044850,85,0.6692,Backend Engineer with 6.9 yrs; 2 AI core skills; response rate 0.73.
-CAND_0092696,86,0.6682,Civil Engineer with 12.7 yrs; 5 AI core skills; response rate 0.75.
-CAND_0088625,87,0.6679,Backend Engineer with 7.9 yrs; 2 AI core skills; response rate 0.80.
-CAND_0096363,88,0.6679,Cloud Engineer with 8.5 yrs; 2 AI core skills; response rate 0.83.
-CAND_0040887,89,0.6678,Machine Learning Engineer with 4.7 yrs; 1 AI core skills; response rate 0.84.
-CAND_0018320,90,0.6676,Software Engineer with 7.0 yrs; 2 AI core skills; response rate 0.75.
-CAND_0043381,91,0.6645,AI Research Engineer with 3.6 yrs; 3 AI core skills; response rate 0.78.
-CAND_0051630,92,0.6626,Machine Learning Engineer with 6.0 yrs; 6 AI core skills; response rate 0.51.
-CAND_0070131,93,0.6613,Software Engineer with 9.8 yrs; 2 AI core skills; response rate 0.66.
-CAND_0061265,94,0.661,Recommendation Systems Engineer with 6.6 yrs; 2 AI core skills; response rate 0.94.
-CAND_0061655,95,0.6597,Machine Learning Engineer with 4.6 yrs; 3 AI core skills; response rate 0.88.
-CAND_0062981,96,0.659,DevOps Engineer with 8.3 yrs; 0 AI core skills; response rate 0.77.
-CAND_0018888,97,0.6586,AI Research Engineer with 6.5 yrs; 5 AI core skills; response rate 0.55.
-CAND_0047492,98,0.6586,ML Engineer with 4.8 yrs; 4 AI core skills; response rate 0.71.
-CAND_0034767,99,0.6579,ML Engineer with 3.5 yrs; 3 AI core skills; response rate 0.69.
-CAND_0057357,100,0.6559,Analytics Engineer with 7.4 yrs; 1 AI core skills; response rate 0.80.
+CAND_0088025,1,0.7663,"Staff Machine Learning Engineer with 8.6 yrs; advanced in Pinecone, LoRA, Prompt Engineering; response rate 0.83, GitHub 75."
+CAND_0077337,2,0.7469,"Staff Machine Learning Engineer with 7.0 yrs; advanced in Semantic Search, Pinecone, Forecasting; response rate 0.95, GitHub 68."
+CAND_0051615,3,0.7374,"Search Engineer with 4.6 yrs; advanced in Milvus, TTS, Prompt Engineering; response rate 0.88, GitHub 95."
+CAND_0076163,4,0.7371,"NLP Engineer with 6.9 yrs; advanced in Weaviate, Statistical Modeling, BM25; response rate 0.84, GitHub 85."
+CAND_0055992,5,0.7358,"AI Engineer with 16.9 yrs; advanced in MLflow, RAG, Data Science; response rate 0.72, GitHub 65."
+CAND_0071974,6,0.7358,"Senior AI Engineer with 7.8 yrs; advanced in LoRA, Learning to Rank, PEFT; response rate 0.76, GitHub 83."
+CAND_0061257,7,0.7338,"Staff Machine Learning Engineer with 8.0 yrs; advanced in PEFT, Haystack, Time Series; response rate 0.87, GitHub 45."
+CAND_0020708,8,0.7269,"Search Engineer with 4.2 yrs; advanced in NLP, Data Science, scikit-learn; response rate 0.84, GitHub 84."
+CAND_0064326,9,0.7257,"Search Engineer with 7.6 yrs; advanced in scikit-learn, Milvus, Semantic Search; response rate 0.94, GitHub 61."
+CAND_0039754,10,0.7235,"Senior Applied Scientist with 16.2 yrs; advanced in LlamaIndex, Kubeflow, LLMs; response rate 0.81, GitHub 78."
+CAND_0041669,11,0.7192,"Recommendation Systems Engineer with 8.0 yrs; advanced in FAISS, MLflow, QLoRA; response rate 0.77, GitHub 71."
+CAND_0017960,12,0.7176,"Recommendation Systems Engineer with 7.7 yrs; advanced in LlamaIndex, Machine Learning, Python; response rate 0.72, GitHub 92."
+CAND_0095619,13,0.7075,"NLP Engineer with 15.6 yrs; advanced in Feature Engineering, MLflow, Hugging Face Transformers; response rate 0.90, GitHub 30."
+CAND_0035879,14,0.707,"AI Research Engineer with 4.5 yrs; advanced in Statistical Modeling, Speech Recognition, Python; response rate 0.82, GitHub 84."
+CAND_0039383,15,0.7064,"Applied ML Engineer with 7.1 yrs; advanced in GANs, Kubeflow, Recommendation Systems; response rate 0.61, GitHub 86."
+CAND_0091534,16,0.7047,"AI Engineer with 16.6 yrs; advanced in Hugging Face Transformers, Diffusion Models, Qdrant; response rate 0.84, GitHub 66."
+CAND_0052328,17,0.6991,"Recommendation Systems Engineer with 6.5 yrs; advanced in LoRA, Image Classification, Recommendation Systems; response rate 0.79, GitHub 78."
+CAND_0080766,18,0.6932,"Staff Machine Learning Engineer with 8.8 yrs; advanced in MLOps, MLflow, Information Retrieval Systems; response rate 0.66, GitHub 33."
+CAND_0074735,19,0.6917,"Applied ML Engineer with 5.5 yrs; advanced in Weaviate, GANs, ASR; response rate 0.77, GitHub 88."
+CAND_0053591,20,0.6914,"AI Engineer with 5.3 yrs; advanced in LangChain, Reinforcement Learning, Embeddings; response rate 0.81, GitHub 76."
+CAND_0076482,21,0.6911,"ML Engineer with 6.6 yrs; advanced in Feature Engineering, Pinecone, TTS; response rate 0.86, GitHub 79."
+CAND_0049538,22,0.6896,"Applied ML Engineer with 5.8 yrs; advanced in Feature Engineering, MLflow, TTS; response rate 0.72, GitHub 91."
+CAND_0054546,23,0.6865,"AI Research Engineer with 4.9 yrs; advanced in Forecasting, Qdrant, Reinforcement Learning; response rate 0.92, GitHub 75."
+CAND_0079387,24,0.6848,"AI Engineer with 6.9 yrs; advanced in Recommendation Systems, Time Series, BM25; response rate 0.81, GitHub 64."
+CAND_0014440,25,0.6845,"Recommendation Systems Engineer with 6.4 yrs; advanced in Elasticsearch, Diffusion Models, Machine Learning; response rate 0.64, GitHub 90."
+CAND_0028793,26,0.6838,"Search Engineer with 7.2 yrs; advanced in Kubeflow, Learning to Rank, PEFT; response rate 0.57, GitHub 83."
+CAND_0018722,27,0.6834,"Recommendation Systems Engineer with 6.6 yrs; advanced in Data Science, Recommendation Systems, LLMs; response rate 0.79, GitHub 94."
+CAND_0019480,28,0.6818,"NLP Engineer with 2.8 yrs; advanced in LangChain, BM25, Prompt Engineering; response rate 0.87, GitHub 70."
+CAND_0010603,29,0.6817,"ML Engineer with 5.3 yrs; advanced in OpenSearch, Image Classification, Deep Learning; response rate 0.94, GitHub 79."
+CAND_0002025,30,0.6815,"Senior AI Engineer with 5.9 yrs; advanced in OpenSearch, Weaviate, Pinecone; response rate 0.80, GitHub 97."
+CAND_0052431,31,0.6815,"ML Engineer with 5.3 yrs; advanced in Milvus, Prompt Engineering, Time Series; response rate 0.85, GitHub 78."
+CAND_0081686,32,0.6815,"Search Engineer with 6.0 yrs; advanced in Kubeflow, CNN, Hugging Face Transformers; response rate 0.91, GitHub 46."
+CAND_0074225,33,0.6811,"Machine Learning Engineer with 4.3 yrs; advanced in Recommendation Systems, Semantic Search, ASR; response rate 0.91, GitHub 54."
+CAND_0058146,34,0.681,"AI Research Engineer with 5.1 yrs; advanced in LLMs, Recommendation Systems, Qdrant; response rate 0.79, GitHub 80."
+CAND_0013536,35,0.68,"Applied ML Engineer with 14.1 yrs; advanced in PyTorch, LLMs, NLP; response rate 0.87, GitHub 52."
+CAND_0048375,36,0.68,"Computer Vision Engineer with 4.4 yrs; advanced in Weights & Biases, BentoML; response rate 0.83, GitHub 82."
+CAND_0046064,37,0.6798,"Senior NLP Engineer with 8.9 yrs; advanced in Image Classification, OpenCV, TTS; response rate 0.78, GitHub 67."
+CAND_0052682,38,0.6796,"NLP Engineer with 6.6 yrs; advanced in TTS, Data Science, Forecasting; response rate 0.88, GitHub 72."
+CAND_0066999,39,0.678,"Recommendation Systems Engineer with 5.9 yrs; advanced in Image Classification, Pinecone, Machine Learning; response rate 0.63, GitHub 94."
+CAND_0008295,40,0.6752,"AI Research Engineer with 6.5 yrs; advanced in BM25, Python, TTS; response rate 0.89, GitHub 51."
+CAND_0001930,41,0.6742,"Senior Software Engineer (ML) with 6.9 yrs; advanced in Statistical Modeling, BentoML, Milvus; response rate 0.65, GitHub 76."
+CAND_0011687,42,0.6713,"Senior NLP Engineer with 7.8 yrs; advanced in FAISS, MLOps, PyTorch; response rate 0.89, GitHub 76."
+CAND_0050876,43,0.6713,"Applied ML Engineer with 6.0 yrs; advanced in Qdrant, MLOps, FAISS; response rate 0.67, GitHub 86."
+CAND_0024990,44,0.6711,"Junior ML Engineer with 5.2 yrs; advanced in Computer Vision, MLflow, Elasticsearch; response rate 0.83, GitHub 80."
+CAND_0018499,45,0.6686,"Senior Machine Learning Engineer with 7.2 yrs; advanced in Diffusion Models, Pinecone, Information Retrieval; response rate 0.61, GitHub 95."
+CAND_0016163,46,0.6685,"Applied ML Engineer with 6.7 yrs; advanced in Hugging Face Transformers, Computer Vision, Time Series; response rate 0.72, GitHub 95."
+CAND_0044883,47,0.6685,"AI Engineer with 6.3 yrs; advanced in Embeddings; response rate 0.84, GitHub 70."
+CAND_0075481,48,0.6684,"AI Research Engineer with 3.9 yrs; advanced in YOLO, MLOps, CNN; response rate 0.88, GitHub 76."
+CAND_0081480,49,0.6681,"Computer Vision Engineer with 5.6 yrs; advanced in Fine-tuning LLMs, FAISS; response rate 0.85, GitHub 61."
+CAND_0003791,50,0.6664,"ML Engineer with 6.6 yrs; advanced in LLMs, GANs, Computer Vision; response rate 0.66, GitHub 58."
+CAND_0061265,51,0.6657,"Recommendation Systems Engineer with 6.6 yrs; advanced in Vector Search, Time Series, Reinforcement Learning; response rate 0.94, GitHub 80."
+CAND_0096142,52,0.6657,"Applied ML Engineer with 5.0 yrs; advanced in LoRA, Weaviate, BentoML; response rate 0.84, GitHub 80."
+CAND_0050553,53,0.6646,"ML Engineer with 3.6 yrs; advanced in Feature Engineering, Statistical Modeling, LlamaIndex; response rate 0.95, GitHub 70."
+CAND_0093547,54,0.6644,"Senior Machine Learning Engineer with 2.9 yrs; advanced in Python, QLoRA, Kubeflow; response rate 0.75, GitHub 60."
+CAND_0012957,55,0.6643,"Search Engineer with 4.9 yrs; advanced in PEFT, Deep Learning, BentoML; response rate 0.67, GitHub 54."
+CAND_0058783,56,0.6625,"Computer Vision Engineer with 3.2 yrs; advanced in Weights & Biases, Fine-tuning LLMs, Milvus; response rate 0.92, GitHub 58."
+CAND_0078042,57,0.6614,"Applied ML Engineer with 4.7 yrs; advanced in Diffusion Models, OpenCV; response rate 0.91, GitHub 84."
+CAND_0059504,58,0.6612,"Junior ML Engineer with 3.3 yrs; advanced in Vector Search, Machine Learning, CNN; response rate 0.83, GitHub 64."
+CAND_0006567,59,0.6585,"Senior AI Engineer with 7.9 yrs; advanced in Search Backend, Vector Representations, NLP; response rate 0.79, GitHub 35."
+CAND_0003609,60,0.6579,"Senior Software Engineer (ML) with 6.1 yrs; advanced in Fine-tuning LLMs, Kubeflow, TTS; response rate 0.50, GitHub 65."
+CAND_0081053,61,0.6571,"NLP Engineer with 5.4 yrs; advanced in Qdrant, OpenCV, Haystack; response rate 0.83, GitHub 78."
+CAND_0083307,62,0.6571,"Search Engineer with 7.8 yrs; advanced in OpenCV, scikit-learn, Semantic Search; response rate 0.70, GitHub 69."
+CAND_0002344,63,0.657,"Senior Software Engineer (ML) with 4.7 yrs; advanced in TensorFlow, MLOps, Image Classification; response rate 0.83, GitHub 82. Concern: high endorsements but weak skill assessment."
+CAND_0061339,64,0.6561,"Search Engineer with 4.2 yrs; advanced in YOLO, BentoML, TensorFlow; response rate 0.90, GitHub 86."
+CAND_0092706,65,0.6553,"AI Research Engineer with 5.8 yrs; advanced in Weights & Biases, Sentence Transformers, MLOps; response rate 0.78, GitHub 65."
+CAND_0068932,66,0.6552,"ML Engineer with 5.2 yrs; advanced in MLOps, Reinforcement Learning, RAG; response rate 0.82, GitHub 70."
+CAND_0037566,67,0.6539,"Machine Learning Engineer with 6.9 yrs; advanced in Time Series, NLP, LoRA; response rate 0.50, GitHub 73."
+CAND_0011125,68,0.6533,"Junior ML Engineer with 6.6 yrs; advanced in Information Retrieval, Embeddings, Milvus; response rate 0.58, GitHub 84."
+CAND_0069905,69,0.6533,"Applied ML Engineer with 6.6 yrs; advanced in Speech Recognition, Image Classification, TensorFlow; response rate 0.78, GitHub 45."
+CAND_0052195,70,0.6532,"Computer Vision Engineer with 6.3 yrs; advanced in Sentence Transformers, CNN, Information Retrieval; response rate 0.69, GitHub 71."
+CAND_0090584,71,0.6532,"ML Engineer with 5.1 yrs; advanced in OpenSearch, MLflow, RAG; response rate 0.64, GitHub 83."
+CAND_0054100,72,0.6521,"Junior ML Engineer with 6.0 yrs; advanced in Vector Search, Reinforcement Learning, Time Series; response rate 0.79, GitHub 73."
+CAND_0084819,73,0.6517,"Search Engineer with 4.5 yrs; advanced in Semantic Search, PyTorch, Reinforcement Learning; response rate 0.74, GitHub 56."
+CAND_0047492,74,0.6514,"ML Engineer with 4.8 yrs; advanced in Time Series, Speech Recognition, Information Retrieval; response rate 0.71, GitHub 65."
+CAND_0099806,75,0.6504,"AI Engineer with 4.6 yrs; advanced in Statistical Modeling, RAG, pgvector; response rate 0.76, GitHub 87."
+CAND_0081846,76,0.6497,"Lead AI Engineer with 6.7 yrs; advanced in Data Science, LlamaIndex, pgvector; response rate 0.73, GitHub 34."
+CAND_0077285,77,0.6495,"Recommendation Systems Engineer with 5.5 yrs; advanced in Pinecone, CNN, Milvus; response rate 0.56, GitHub 76."
+CAND_0080534,78,0.6495,"ML Engineer with 3.8 yrs; advanced in Elasticsearch, OpenSearch, Kubeflow; response rate 0.91, GitHub 81."
+CAND_0027801,79,0.6474,"NLP Engineer with 7.4 yrs; advanced in Diffusion Models, GANs, Vector Search; response rate 0.65, GitHub 63."
+CAND_0008425,80,0.6468,"Senior NLP Engineer with 7.8 yrs; advanced in Weights & Biases, TensorFlow, Prompt Engineering; response rate 0.66, GitHub 53."
+CAND_0043381,81,0.6457,"AI Research Engineer with 3.6 yrs; advanced in scikit-learn, Forecasting, OpenSearch; response rate 0.78, GitHub 71."
+CAND_0007009,82,0.645,"Recommendation Systems Engineer with 7.9 yrs; advanced in Statistical Modeling, CNN, Forecasting; response rate 0.62, GitHub 69."
+CAND_0064904,83,0.644,"AI Engineer with 4.9 yrs; advanced in Hugging Face Transformers, Forecasting, MLOps; response rate 0.78, GitHub 59."
+CAND_0045778,84,0.6434,"Senior Software Engineer (ML) with 4.4 yrs; advanced in Milvus, LLMs, Speech Recognition; response rate 0.83, GitHub 84."
+CAND_0080465,85,0.6424,"ML Engineer with 4.2 yrs; advanced in Milvus, Haystack, Qdrant; response rate 0.83, GitHub 81. Concern: high endorsements but weak skill assessment."
+CAND_0058688,86,0.6414,"AI Engineer with 6.7 yrs; advanced in Object Detection, Computer Vision, TensorFlow; response rate 0.74, GitHub 39."
+CAND_0061655,87,0.6411,"Machine Learning Engineer with 4.6 yrs; advanced in Haystack, Time Series, PyTorch; response rate 0.88, GitHub 56."
+CAND_0093331,88,0.6402,"NLP Engineer with 16.1 yrs; advanced in QLoRA, Embeddings, BM25; response rate 0.41, GitHub 74. Concern: high recruiter demand but low engagement."
+CAND_0065195,89,0.6401,"Search Engineer with 5.1 yrs; advanced in Diffusion Models, Hugging Face Transformers, MLOps; response rate 0.80, GitHub 87."
+CAND_0046353,90,0.6398,"ML Engineer with 6.4 yrs; advanced in MLflow, PyTorch, FAISS; response rate 0.73, GitHub 77."
+CAND_0011643,91,0.6394,"AI Research Engineer with 4.2 yrs; advanced in Pinecone, Image Classification, LlamaIndex; response rate 0.85, GitHub 85."
+CAND_0040887,92,0.6389,"Machine Learning Engineer with 4.7 yrs; advanced in Reinforcement Learning, Computer Vision, FAISS; response rate 0.84, GitHub 34."
+CAND_0080603,93,0.6389,"Senior Data Engineer with 5.8 yrs; advanced in Computer Vision, Pinecone, GANs; response rate 0.76, GitHub 57."
+CAND_0031143,94,0.6382,"ML Engineer with 5.5 yrs; advanced in QLoRA, Python, TTS; response rate 0.84, GitHub 76."
+CAND_0065786,95,0.635,"AI Specialist with 4.9 yrs; advanced in Learning to Rank, Kubeflow, BentoML; response rate 0.89, GitHub 71."
+CAND_0088354,96,0.635,"Junior ML Engineer with 6.5 yrs; advanced in OpenSearch, PEFT, YOLO; response rate 0.80, GitHub 72."
+CAND_0032887,97,0.6341,"ML Engineer with 6.1 yrs; advanced in Reinforcement Learning, Forecasting, NLP; response rate 0.81, GitHub 52."
+CAND_0094165,98,0.6341,"AI Research Engineer with 5.8 yrs; advanced in Object Detection, Time Series, pgvector; response rate 0.78, GitHub 82."
+CAND_0043304,99,0.6338,"Junior ML Engineer with 6.5 yrs; advanced in Sentence Transformers, Machine Learning, Diffusion Models; response rate 0.75, GitHub 68."
+CAND_0043384,100,0.6337,"Computer Vision Engineer with 5.2 yrs; advanced in Kubeflow, Diffusion Models, Reinforcement Learning; response rate 0.83, GitHub 63."
