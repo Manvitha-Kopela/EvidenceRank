@@ -1,25 +1,30 @@
+from config import CONFIG
+
+
 def calculate_scores(q, b, c, conf):
     qualification_score = (
-        0.25 * min(q["years_experience"] / 10, 1)
-        + 0.20 * q["skill_overlap"]
-        + 0.20 * q["title_score"]
-        + 0.35 * q["semantic_score"]
+        CONFIG["qualification_weights"]["experience"] * min(q["years_experience"] / 10, 1)
+        + CONFIG["qualification_weights"]["skill_overlap"] * q["skill_overlap"]
+        + CONFIG["qualification_weights"]["title_score"] * q["title_score"]
+        + CONFIG["qualification_weights"]["semantic_score"] * q["semantic_score"]
+
+
     )
 
     behavior_score = (
-        0.35 * b["github_score"]
-        + 0.25 * b["response_rate"]
-        + 0.20 * b["completion_rate"]
-        + 0.20 * b["recruiter_saves"]
+        CONFIG["behavior_weights"]["github_score"] * b["github_score"]
+        + CONFIG["behavior_weights"]["response_rate"] * b["response_rate"]
+        + CONFIG["behavior_weights"]["completion_rate"] * b["completion_rate"]
+        + CONFIG["behavior_weights"]["recruiter_saves"] * b["recruiter_saves"]
     )
 
     # Scaled penalty: 0 contradictions = 0, 5 contradictions = 0.25
     contradiction_penalty = (c["contradiction_score"] / 5) * 0.25
 
     fit_score = (
-        0.45 * qualification_score
-        + 0.35 * behavior_score
-        + 0.20 * conf["evidence_density"]
+        CONFIG["fit_weights"]["qualification"] * qualification_score
+        + CONFIG["fit_weights"]["behavior"] * behavior_score
+        + CONFIG["fit_weights"]["confidence"] * conf["evidence_density"]
     ) - contradiction_penalty
 
     fit_score = max(0, min(1, fit_score))
@@ -42,8 +47,8 @@ def calculate_risk(candidate):
     relocation_risk = 0 if relocate else 0.5
 
     risk_score = (
-        0.5 * notice_risk +
-        0.3 * response_risk +
-        0.2 * relocation_risk
+        CONFIG["risk_weights"]["notice_period"] * notice_risk
+        + CONFIG["risk_weights"]["response_rate"] * response_risk
+        + CONFIG["risk_weights"]["relocation"] * relocation_risk
     )
     return min(risk_score, 1)

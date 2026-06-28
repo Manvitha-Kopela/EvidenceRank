@@ -1,0 +1,24 @@
+qualification_weights:
+  experience: 0.25
+  skill_overlap: 0.20
+  title_score: 0.20
+  semantic_score: 0.35
+
+behavior_weights:
+  github_score: 0.35
+  response_rate: 0.25
+  completion_rate: 0.20
+  recruiter_saves: 0.20
+
+fit_weights:
+  qualification: 0.45
+  behavior: 0.35
+  confidence: 0.20
+
+penalties:
+  contradiction: 0.20
+
+risk_weights:
+  notice_period: 0.50
+  response_rate: 0.30
+  relocation: 0.20
