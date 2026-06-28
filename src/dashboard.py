@@ -4,7 +4,11 @@ from jd_parser import parse_job_description
 from features import contradiction_features
 from parser import load_candidates
 import plotly.graph_objects as go
-
+import os
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_PATH = os.path.join(BASE_DIR, "data", "raw", "candidates.jsonl")
+JD_PATH = os.path.join(BASE_DIR, "data", "raw", "job_description.docx")
+RESULTS_PATH = os.path.join(BASE_DIR, "outputs", "final_submission.csv")
 
 def compare_candidates(cand_a, cand_b, contr_a, contr_b):
     reasons = []
@@ -34,12 +38,12 @@ st.set_page_config(page_title="EvidenceRank", layout="wide")
 
 @st.cache_data
 def load_candidate_map():
-    candidates = load_candidates("../data/raw/candidates.jsonl")
+    candidates = load_candidates(DATA_PATH)
     return {c["candidate_id"]: c for c in candidates}
 
 
-jd = parse_job_description("../data/raw/job_description.docx")
-df = pd.read_csv("../outputs/final_submission.csv")
+jd = parse_job_description(JD_PATH)
+df = pd.read_csv(RESULTS_PATH)
 candidate_map = load_candidate_map()
 candidate_ids = df["candidate_id"].tolist()
 
