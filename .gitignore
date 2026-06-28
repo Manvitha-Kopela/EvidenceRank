@@ -20,4 +20,5 @@ Thumbs.db
 
 # IDE
 .vscode/
-.idea/
+.idea/outputs/candidate_embeddings.npy 
+outputs/candidate_ids.npy 

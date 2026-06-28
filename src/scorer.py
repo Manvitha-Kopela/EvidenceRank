@@ -2,14 +2,15 @@ from config import CONFIG
 
 
 def calculate_scores(q, b, c, conf):
-    # Qualification score
     qualification_score = (
         CONFIG["qualification_weights"]["experience"] * min(q["years_experience"] / 10, 1)
         + CONFIG["qualification_weights"]["skill_overlap"] * q["skill_overlap"]
         + CONFIG["qualification_weights"]["title_score"] * q["title_score"]
+        + CONFIG["qualification_weights"]["semantic_score"] * q["semantic_score"]
+
+
     )
 
-    # Behavior score
     behavior_score = (
         CONFIG["behavior_weights"]["github_score"] * b["github_score"]
         + CONFIG["behavior_weights"]["response_rate"] * b["response_rate"]
@@ -17,10 +18,8 @@ def calculate_scores(q, b, c, conf):
         + CONFIG["behavior_weights"]["recruiter_saves"] * b["recruiter_saves"]
     )
 
-    contradiction_penalty = (
-        c["contradiction_score"]
-        * CONFIG["penalties"]["contradiction"]
-    )
+    # Scaled penalty: 0 contradictions = 0, 5 contradictions = 0.25
+    contradiction_penalty = (c["contradiction_score"] / 5) * 0.25
 
     fit_score = (
         CONFIG["fit_weights"]["qualification"] * qualification_score
@@ -30,20 +29,15 @@ def calculate_scores(q, b, c, conf):
 
     fit_score = max(0, min(1, fit_score))
 
-    hiring_confidence = max(
-        0,
-        conf["evidence_density"] - contradiction_penalty
-    )
+    hiring_confidence = max(0, conf["evidence_density"] - contradiction_penalty)
 
     return {
         "fit_score": fit_score,
         "confidence": hiring_confidence
     }
 
-
 def calculate_risk(candidate):
     signals = candidate["redrob_signals"]
-
     notice = signals.get("notice_period_days", 0)
     response = signals.get("recruiter_response_rate", 0)
     relocate = signals.get("willing_to_relocate", True)
@@ -57,5 +51,4 @@ def calculate_risk(candidate):
         + CONFIG["risk_weights"]["response_rate"] * response_risk
         + CONFIG["risk_weights"]["relocation"] * relocation_risk
     )
-
     return min(risk_score, 1)

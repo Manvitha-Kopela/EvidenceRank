@@ -1,13 +1,21 @@
 import pandas as pd
 from parser import load_candidates
-from features import *
-from scorer import calculate_scores
+from features import (
+    qualification_features, behavioral_features,
+    contradiction_features, confidence_features,
+    precompute_embeddings, load_embedding_cache
+)
+from scorer import calculate_scores, calculate_risk
 
 print("Loading candidates...")
 candidates = load_candidates("../data/raw/candidates.jsonl")
 
-results = []
+# Precompute all embeddings once, or load from cache
+load_embedding_cache()
+if not __import__('os').path.exists("../outputs/candidate_embeddings.npy"):
+    precompute_embeddings(candidates)
 
+results = []
 print("Scoring candidates...")
 
 for candidate in candidates:
@@ -16,25 +24,31 @@ for candidate in candidates:
         b = behavioral_features(candidate)
         c = contradiction_features(candidate)
         conf = confidence_features(candidate)
-
         scores = calculate_scores(q, b, c, conf)
+        risk = calculate_risk(candidate)
 
         results.append({
             "candidate_id": candidate["candidate_id"],
-            "fit_score": scores["fit_score"],
-            "confidence": scores["confidence"],
-            "contradictions": c["contradiction_score"]
+            "fit_score": round(scores["fit_score"], 4),
+            "confidence": round(scores["confidence"], 4),
+            "risk_score": round(risk, 4),
+            "contradictions": c["contradiction_score"],
+            "contradiction_reasons": "; ".join(c["reasons"])
         })
-
     except Exception as e:
-        print(f"Error processing candidate {candidate['candidate_id']}: {e}")
+        print(f"Error processing {candidate['candidate_id']}: {e}")
 
 df = pd.DataFrame(results)
-print("\nContradiction Distribution:")
-print(df["contradictions"].value_counts().sort_index())
-
-df = df.sort_values("fit_score", ascending=False)
+df = df.sort_values("fit_score", ascending=False).reset_index(drop=True)
+df.insert(0, "rank", df.index + 1)
 
 df.to_csv("../outputs/ranked_candidates.csv", index=False)
 
-print(df.head(10))
+print("\nTop 10 candidates:")
+print(df[["rank", "candidate_id", "fit_score", "confidence", "risk_score", "contradictions"]].head(10))
+print(f"\nTotal scored: {len(df)}")
+print("\nContradiction distribution:")
+print(df["contradictions"].value_counts().sort_index())
+
+print("\nRisk score distribution (top 100):")
+print(df.head(100)["risk_score"].describe())

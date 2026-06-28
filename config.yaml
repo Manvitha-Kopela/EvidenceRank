@@ -1,7 +1,8 @@
 qualification_weights:
-  experience: 0.40
-  skill_overlap: 0.40
+  experience: 0.25
+  skill_overlap: 0.20
   title_score: 0.20
+  semantic_score: 0.35
 
 behavior_weights:
   github_score: 0.35
