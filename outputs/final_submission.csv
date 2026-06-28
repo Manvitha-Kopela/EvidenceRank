@@ -1,101 +1,101 @@
 candidate_id,rank,score,reasoning
-CAND_0088025,1,0.7663,"Staff Machine Learning Engineer with 8.6 yrs; advanced in Pinecone, LoRA, Prompt Engineering; response rate 0.83, GitHub 75."
-CAND_0077337,2,0.7469,"Staff Machine Learning Engineer with 7.0 yrs; advanced in Semantic Search, Pinecone, Forecasting; response rate 0.95, GitHub 68."
-CAND_0051615,3,0.7374,"Search Engineer with 4.6 yrs; advanced in Milvus, TTS, Prompt Engineering; response rate 0.88, GitHub 95."
-CAND_0076163,4,0.7371,"NLP Engineer with 6.9 yrs; advanced in Weaviate, Statistical Modeling, BM25; response rate 0.84, GitHub 85."
-CAND_0055992,5,0.7358,"AI Engineer with 16.9 yrs; advanced in MLflow, RAG, Data Science; response rate 0.72, GitHub 65."
-CAND_0071974,6,0.7358,"Senior AI Engineer with 7.8 yrs; advanced in LoRA, Learning to Rank, PEFT; response rate 0.76, GitHub 83."
-CAND_0061257,7,0.7338,"Staff Machine Learning Engineer with 8.0 yrs; advanced in PEFT, Haystack, Time Series; response rate 0.87, GitHub 45."
-CAND_0020708,8,0.7269,"Search Engineer with 4.2 yrs; advanced in NLP, Data Science, scikit-learn; response rate 0.84, GitHub 84."
-CAND_0064326,9,0.7257,"Search Engineer with 7.6 yrs; advanced in scikit-learn, Milvus, Semantic Search; response rate 0.94, GitHub 61."
-CAND_0039754,10,0.7235,"Senior Applied Scientist with 16.2 yrs; advanced in LlamaIndex, Kubeflow, LLMs; response rate 0.81, GitHub 78."
-CAND_0041669,11,0.7192,"Recommendation Systems Engineer with 8.0 yrs; advanced in FAISS, MLflow, QLoRA; response rate 0.77, GitHub 71."
-CAND_0017960,12,0.7176,"Recommendation Systems Engineer with 7.7 yrs; advanced in LlamaIndex, Machine Learning, Python; response rate 0.72, GitHub 92."
-CAND_0095619,13,0.7075,"NLP Engineer with 15.6 yrs; advanced in Feature Engineering, MLflow, Hugging Face Transformers; response rate 0.90, GitHub 30."
-CAND_0035879,14,0.707,"AI Research Engineer with 4.5 yrs; advanced in Statistical Modeling, Speech Recognition, Python; response rate 0.82, GitHub 84."
-CAND_0039383,15,0.7064,"Applied ML Engineer with 7.1 yrs; advanced in GANs, Kubeflow, Recommendation Systems; response rate 0.61, GitHub 86."
-CAND_0091534,16,0.7047,"AI Engineer with 16.6 yrs; advanced in Hugging Face Transformers, Diffusion Models, Qdrant; response rate 0.84, GitHub 66."
-CAND_0052328,17,0.6991,"Recommendation Systems Engineer with 6.5 yrs; advanced in LoRA, Image Classification, Recommendation Systems; response rate 0.79, GitHub 78."
-CAND_0080766,18,0.6932,"Staff Machine Learning Engineer with 8.8 yrs; advanced in MLOps, MLflow, Information Retrieval Systems; response rate 0.66, GitHub 33."
-CAND_0074735,19,0.6917,"Applied ML Engineer with 5.5 yrs; advanced in Weaviate, GANs, ASR; response rate 0.77, GitHub 88."
-CAND_0053591,20,0.6914,"AI Engineer with 5.3 yrs; advanced in LangChain, Reinforcement Learning, Embeddings; response rate 0.81, GitHub 76."
-CAND_0076482,21,0.6911,"ML Engineer with 6.6 yrs; advanced in Feature Engineering, Pinecone, TTS; response rate 0.86, GitHub 79."
-CAND_0049538,22,0.6896,"Applied ML Engineer with 5.8 yrs; advanced in Feature Engineering, MLflow, TTS; response rate 0.72, GitHub 91."
-CAND_0054546,23,0.6865,"AI Research Engineer with 4.9 yrs; advanced in Forecasting, Qdrant, Reinforcement Learning; response rate 0.92, GitHub 75."
-CAND_0079387,24,0.6848,"AI Engineer with 6.9 yrs; advanced in Recommendation Systems, Time Series, BM25; response rate 0.81, GitHub 64."
-CAND_0014440,25,0.6845,"Recommendation Systems Engineer with 6.4 yrs; advanced in Elasticsearch, Diffusion Models, Machine Learning; response rate 0.64, GitHub 90."
-CAND_0028793,26,0.6838,"Search Engineer with 7.2 yrs; advanced in Kubeflow, Learning to Rank, PEFT; response rate 0.57, GitHub 83."
-CAND_0018722,27,0.6834,"Recommendation Systems Engineer with 6.6 yrs; advanced in Data Science, Recommendation Systems, LLMs; response rate 0.79, GitHub 94."
-CAND_0019480,28,0.6818,"NLP Engineer with 2.8 yrs; advanced in LangChain, BM25, Prompt Engineering; response rate 0.87, GitHub 70."
-CAND_0010603,29,0.6817,"ML Engineer with 5.3 yrs; advanced in OpenSearch, Image Classification, Deep Learning; response rate 0.94, GitHub 79."
-CAND_0002025,30,0.6815,"Senior AI Engineer with 5.9 yrs; advanced in OpenSearch, Weaviate, Pinecone; response rate 0.80, GitHub 97."
-CAND_0052431,31,0.6815,"ML Engineer with 5.3 yrs; advanced in Milvus, Prompt Engineering, Time Series; response rate 0.85, GitHub 78."
-CAND_0081686,32,0.6815,"Search Engineer with 6.0 yrs; advanced in Kubeflow, CNN, Hugging Face Transformers; response rate 0.91, GitHub 46."
-CAND_0074225,33,0.6811,"Machine Learning Engineer with 4.3 yrs; advanced in Recommendation Systems, Semantic Search, ASR; response rate 0.91, GitHub 54."
-CAND_0058146,34,0.681,"AI Research Engineer with 5.1 yrs; advanced in LLMs, Recommendation Systems, Qdrant; response rate 0.79, GitHub 80."
-CAND_0013536,35,0.68,"Applied ML Engineer with 14.1 yrs; advanced in PyTorch, LLMs, NLP; response rate 0.87, GitHub 52."
-CAND_0048375,36,0.68,"Computer Vision Engineer with 4.4 yrs; advanced in Weights & Biases, BentoML; response rate 0.83, GitHub 82."
-CAND_0046064,37,0.6798,"Senior NLP Engineer with 8.9 yrs; advanced in Image Classification, OpenCV, TTS; response rate 0.78, GitHub 67."
-CAND_0052682,38,0.6796,"NLP Engineer with 6.6 yrs; advanced in TTS, Data Science, Forecasting; response rate 0.88, GitHub 72."
-CAND_0066999,39,0.678,"Recommendation Systems Engineer with 5.9 yrs; advanced in Image Classification, Pinecone, Machine Learning; response rate 0.63, GitHub 94."
-CAND_0008295,40,0.6752,"AI Research Engineer with 6.5 yrs; advanced in BM25, Python, TTS; response rate 0.89, GitHub 51."
-CAND_0001930,41,0.6742,"Senior Software Engineer (ML) with 6.9 yrs; advanced in Statistical Modeling, BentoML, Milvus; response rate 0.65, GitHub 76."
-CAND_0011687,42,0.6713,"Senior NLP Engineer with 7.8 yrs; advanced in FAISS, MLOps, PyTorch; response rate 0.89, GitHub 76."
-CAND_0050876,43,0.6713,"Applied ML Engineer with 6.0 yrs; advanced in Qdrant, MLOps, FAISS; response rate 0.67, GitHub 86."
-CAND_0024990,44,0.6711,"Junior ML Engineer with 5.2 yrs; advanced in Computer Vision, MLflow, Elasticsearch; response rate 0.83, GitHub 80."
-CAND_0018499,45,0.6686,"Senior Machine Learning Engineer with 7.2 yrs; advanced in Diffusion Models, Pinecone, Information Retrieval; response rate 0.61, GitHub 95."
-CAND_0016163,46,0.6685,"Applied ML Engineer with 6.7 yrs; advanced in Hugging Face Transformers, Computer Vision, Time Series; response rate 0.72, GitHub 95."
-CAND_0044883,47,0.6685,"AI Engineer with 6.3 yrs; advanced in Embeddings; response rate 0.84, GitHub 70."
-CAND_0075481,48,0.6684,"AI Research Engineer with 3.9 yrs; advanced in YOLO, MLOps, CNN; response rate 0.88, GitHub 76."
-CAND_0081480,49,0.6681,"Computer Vision Engineer with 5.6 yrs; advanced in Fine-tuning LLMs, FAISS; response rate 0.85, GitHub 61."
-CAND_0003791,50,0.6664,"ML Engineer with 6.6 yrs; advanced in LLMs, GANs, Computer Vision; response rate 0.66, GitHub 58."
-CAND_0061265,51,0.6657,"Recommendation Systems Engineer with 6.6 yrs; advanced in Vector Search, Time Series, Reinforcement Learning; response rate 0.94, GitHub 80."
-CAND_0096142,52,0.6657,"Applied ML Engineer with 5.0 yrs; advanced in LoRA, Weaviate, BentoML; response rate 0.84, GitHub 80."
-CAND_0050553,53,0.6646,"ML Engineer with 3.6 yrs; advanced in Feature Engineering, Statistical Modeling, LlamaIndex; response rate 0.95, GitHub 70."
-CAND_0093547,54,0.6644,"Senior Machine Learning Engineer with 2.9 yrs; advanced in Python, QLoRA, Kubeflow; response rate 0.75, GitHub 60."
-CAND_0012957,55,0.6643,"Search Engineer with 4.9 yrs; advanced in PEFT, Deep Learning, BentoML; response rate 0.67, GitHub 54."
-CAND_0058783,56,0.6625,"Computer Vision Engineer with 3.2 yrs; advanced in Weights & Biases, Fine-tuning LLMs, Milvus; response rate 0.92, GitHub 58."
-CAND_0078042,57,0.6614,"Applied ML Engineer with 4.7 yrs; advanced in Diffusion Models, OpenCV; response rate 0.91, GitHub 84."
-CAND_0059504,58,0.6612,"Junior ML Engineer with 3.3 yrs; advanced in Vector Search, Machine Learning, CNN; response rate 0.83, GitHub 64."
-CAND_0006567,59,0.6585,"Senior AI Engineer with 7.9 yrs; advanced in Search Backend, Vector Representations, NLP; response rate 0.79, GitHub 35."
-CAND_0003609,60,0.6579,"Senior Software Engineer (ML) with 6.1 yrs; advanced in Fine-tuning LLMs, Kubeflow, TTS; response rate 0.50, GitHub 65."
-CAND_0081053,61,0.6571,"NLP Engineer with 5.4 yrs; advanced in Qdrant, OpenCV, Haystack; response rate 0.83, GitHub 78."
-CAND_0083307,62,0.6571,"Search Engineer with 7.8 yrs; advanced in OpenCV, scikit-learn, Semantic Search; response rate 0.70, GitHub 69."
-CAND_0002344,63,0.657,"Senior Software Engineer (ML) with 4.7 yrs; advanced in TensorFlow, MLOps, Image Classification; response rate 0.83, GitHub 82. Concern: high endorsements but weak skill assessment."
-CAND_0061339,64,0.6561,"Search Engineer with 4.2 yrs; advanced in YOLO, BentoML, TensorFlow; response rate 0.90, GitHub 86."
-CAND_0092706,65,0.6553,"AI Research Engineer with 5.8 yrs; advanced in Weights & Biases, Sentence Transformers, MLOps; response rate 0.78, GitHub 65."
-CAND_0068932,66,0.6552,"ML Engineer with 5.2 yrs; advanced in MLOps, Reinforcement Learning, RAG; response rate 0.82, GitHub 70."
-CAND_0037566,67,0.6539,"Machine Learning Engineer with 6.9 yrs; advanced in Time Series, NLP, LoRA; response rate 0.50, GitHub 73."
-CAND_0011125,68,0.6533,"Junior ML Engineer with 6.6 yrs; advanced in Information Retrieval, Embeddings, Milvus; response rate 0.58, GitHub 84."
-CAND_0069905,69,0.6533,"Applied ML Engineer with 6.6 yrs; advanced in Speech Recognition, Image Classification, TensorFlow; response rate 0.78, GitHub 45."
-CAND_0052195,70,0.6532,"Computer Vision Engineer with 6.3 yrs; advanced in Sentence Transformers, CNN, Information Retrieval; response rate 0.69, GitHub 71."
-CAND_0090584,71,0.6532,"ML Engineer with 5.1 yrs; advanced in OpenSearch, MLflow, RAG; response rate 0.64, GitHub 83."
-CAND_0054100,72,0.6521,"Junior ML Engineer with 6.0 yrs; advanced in Vector Search, Reinforcement Learning, Time Series; response rate 0.79, GitHub 73."
-CAND_0084819,73,0.6517,"Search Engineer with 4.5 yrs; advanced in Semantic Search, PyTorch, Reinforcement Learning; response rate 0.74, GitHub 56."
-CAND_0047492,74,0.6514,"ML Engineer with 4.8 yrs; advanced in Time Series, Speech Recognition, Information Retrieval; response rate 0.71, GitHub 65."
-CAND_0099806,75,0.6504,"AI Engineer with 4.6 yrs; advanced in Statistical Modeling, RAG, pgvector; response rate 0.76, GitHub 87."
-CAND_0081846,76,0.6497,"Lead AI Engineer with 6.7 yrs; advanced in Data Science, LlamaIndex, pgvector; response rate 0.73, GitHub 34."
-CAND_0077285,77,0.6495,"Recommendation Systems Engineer with 5.5 yrs; advanced in Pinecone, CNN, Milvus; response rate 0.56, GitHub 76."
-CAND_0080534,78,0.6495,"ML Engineer with 3.8 yrs; advanced in Elasticsearch, OpenSearch, Kubeflow; response rate 0.91, GitHub 81."
-CAND_0027801,79,0.6474,"NLP Engineer with 7.4 yrs; advanced in Diffusion Models, GANs, Vector Search; response rate 0.65, GitHub 63."
-CAND_0008425,80,0.6468,"Senior NLP Engineer with 7.8 yrs; advanced in Weights & Biases, TensorFlow, Prompt Engineering; response rate 0.66, GitHub 53."
-CAND_0043381,81,0.6457,"AI Research Engineer with 3.6 yrs; advanced in scikit-learn, Forecasting, OpenSearch; response rate 0.78, GitHub 71."
-CAND_0007009,82,0.645,"Recommendation Systems Engineer with 7.9 yrs; advanced in Statistical Modeling, CNN, Forecasting; response rate 0.62, GitHub 69."
-CAND_0064904,83,0.644,"AI Engineer with 4.9 yrs; advanced in Hugging Face Transformers, Forecasting, MLOps; response rate 0.78, GitHub 59."
-CAND_0045778,84,0.6434,"Senior Software Engineer (ML) with 4.4 yrs; advanced in Milvus, LLMs, Speech Recognition; response rate 0.83, GitHub 84."
-CAND_0080465,85,0.6424,"ML Engineer with 4.2 yrs; advanced in Milvus, Haystack, Qdrant; response rate 0.83, GitHub 81. Concern: high endorsements but weak skill assessment."
-CAND_0058688,86,0.6414,"AI Engineer with 6.7 yrs; advanced in Object Detection, Computer Vision, TensorFlow; response rate 0.74, GitHub 39."
-CAND_0061655,87,0.6411,"Machine Learning Engineer with 4.6 yrs; advanced in Haystack, Time Series, PyTorch; response rate 0.88, GitHub 56."
-CAND_0093331,88,0.6402,"NLP Engineer with 16.1 yrs; advanced in QLoRA, Embeddings, BM25; response rate 0.41, GitHub 74. Concern: high recruiter demand but low engagement."
-CAND_0065195,89,0.6401,"Search Engineer with 5.1 yrs; advanced in Diffusion Models, Hugging Face Transformers, MLOps; response rate 0.80, GitHub 87."
-CAND_0046353,90,0.6398,"ML Engineer with 6.4 yrs; advanced in MLflow, PyTorch, FAISS; response rate 0.73, GitHub 77."
-CAND_0011643,91,0.6394,"AI Research Engineer with 4.2 yrs; advanced in Pinecone, Image Classification, LlamaIndex; response rate 0.85, GitHub 85."
-CAND_0040887,92,0.6389,"Machine Learning Engineer with 4.7 yrs; advanced in Reinforcement Learning, Computer Vision, FAISS; response rate 0.84, GitHub 34."
-CAND_0080603,93,0.6389,"Senior Data Engineer with 5.8 yrs; advanced in Computer Vision, Pinecone, GANs; response rate 0.76, GitHub 57."
-CAND_0031143,94,0.6382,"ML Engineer with 5.5 yrs; advanced in QLoRA, Python, TTS; response rate 0.84, GitHub 76."
-CAND_0065786,95,0.635,"AI Specialist with 4.9 yrs; advanced in Learning to Rank, Kubeflow, BentoML; response rate 0.89, GitHub 71."
-CAND_0088354,96,0.635,"Junior ML Engineer with 6.5 yrs; advanced in OpenSearch, PEFT, YOLO; response rate 0.80, GitHub 72."
-CAND_0032887,97,0.6341,"ML Engineer with 6.1 yrs; advanced in Reinforcement Learning, Forecasting, NLP; response rate 0.81, GitHub 52."
-CAND_0094165,98,0.6341,"AI Research Engineer with 5.8 yrs; advanced in Object Detection, Time Series, pgvector; response rate 0.78, GitHub 82."
-CAND_0043304,99,0.6338,"Junior ML Engineer with 6.5 yrs; advanced in Sentence Transformers, Machine Learning, Diffusion Models; response rate 0.75, GitHub 68."
-CAND_0043384,100,0.6337,"Computer Vision Engineer with 5.2 yrs; advanced in Kubeflow, Diffusion Models, Reinforcement Learning; response rate 0.83, GitHub 63."
+CAND_0088025,1,0.766347,Staff Machine Learning Engineer with 8.6 yrs and direct JD-relevant expertise in Pinecone. High recruiter engagement (0.83 response rate); strong github activity (75); saved by 19 recruiters recently; senior experience level supports seniority match.
+CAND_0077337,2,0.746919,"Staff Machine Learning Engineer with 7.0 yrs and direct JD-relevant expertise in Semantic Search, Pinecone. High recruiter engagement (0.95 response rate); strong github activity (68); saved by 32 recruiters recently."
+CAND_0051615,3,0.737449,Search Engineer with 4.6 yrs and direct JD-relevant expertise in Milvus. High recruiter engagement (0.88 response rate); strong github activity (95); saved by 42 recruiters recently.
+CAND_0076163,4,0.737062,NLP Engineer with 6.9 yrs and direct JD-relevant expertise in Weaviate. High recruiter engagement (0.84 response rate); strong github activity (85); saved by 62 recruiters recently.
+CAND_0055992,5,0.735811,AI Engineer with 16.9 yrs and direct JD-relevant expertise in RAG. High recruiter engagement (0.72 response rate); strong github activity (65); saved by 57 recruiters recently; senior experience level supports seniority match.
+CAND_0071974,6,0.73581,"Senior AI Engineer with 7.8 yrs; advanced skills in LoRA, Learning to Rank, PEFT with partial JD overlap. High recruiter engagement (0.76 response rate); strong github activity (83); saved by 50 recruiters recently."
+CAND_0061257,7,0.733795,"Staff Machine Learning Engineer with 8.0 yrs; advanced skills in PEFT, Haystack, Time Series with partial JD overlap. High recruiter engagement (0.87 response rate); saved by 80 recruiters recently; senior experience level supports seniority match."
+CAND_0020708,8,0.726903,Search Engineer with 4.2 yrs and direct JD-relevant expertise in NLP. High recruiter engagement (0.84 response rate); strong github activity (84); saved by 52 recruiters recently.
+CAND_0064326,9,0.72574,"Search Engineer with 7.6 yrs and direct JD-relevant expertise in Milvus, Semantic Search. High recruiter engagement (0.94 response rate); strong github activity (61); saved by 60 recruiters recently."
+CAND_0039754,10,0.72348,Senior Applied Scientist with 16.2 yrs and direct JD-relevant expertise in LLMs. High recruiter engagement (0.81 response rate); strong github activity (78); saved by 51 recruiters recently; senior experience level supports seniority match.
+CAND_0041669,11,0.719232,Recommendation Systems Engineer with 8.0 yrs and direct JD-relevant expertise in FAISS. High recruiter engagement (0.77 response rate); strong github activity (71); saved by 37 recruiters recently; senior experience level supports seniority match.
+CAND_0017960,12,0.717555,"Recommendation Systems Engineer with 7.7 yrs; advanced skills in LlamaIndex, Machine Learning, Python with partial JD overlap. High recruiter engagement (0.72 response rate); strong github activity (92); saved by 43 recruiters recently."
+CAND_0095619,13,0.707501,"NLP Engineer with 15.6 yrs; advanced skills in Feature Engineering, MLflow, Hugging Face Transformers with partial JD overlap. High recruiter engagement (0.90 response rate); saved by 55 recruiters recently; senior experience level supports seniority match."
+CAND_0035879,14,0.707031,"AI Research Engineer with 4.5 yrs; advanced skills in Statistical Modeling, Speech Recognition, Python with partial JD overlap. High recruiter engagement (0.82 response rate); strong github activity (84); saved by 37 recruiters recently."
+CAND_0039383,15,0.706408,"Applied ML Engineer with 7.1 yrs; advanced skills in GANs, Kubeflow, Recommendation Systems with partial JD overlap. Moderate recruiter engagement (0.61 response rate); strong github activity (86); saved by 34 recruiters recently."
+CAND_0091534,16,0.704682,"AI Engineer with 16.6 yrs; advanced skills in Hugging Face Transformers, Diffusion Models, Qdrant with partial JD overlap. High recruiter engagement (0.84 response rate); strong github activity (66); saved by 49 recruiters recently; senior experience level supports seniority match."
+CAND_0052328,17,0.699056,"Recommendation Systems Engineer with 6.5 yrs; advanced skills in LoRA, Image Classification, Recommendation Systems with partial JD overlap. High recruiter engagement (0.79 response rate); strong github activity (78); saved by 31 recruiters recently."
+CAND_0080766,18,0.69319,Staff Machine Learning Engineer with 8.8 yrs and direct JD-relevant expertise in Information Retrieval Systems. Moderate recruiter engagement (0.66 response rate); saved by 27 recruiters recently; senior experience level supports seniority match.
+CAND_0074735,19,0.691744,Applied ML Engineer with 5.5 yrs and direct JD-relevant expertise in Weaviate. High recruiter engagement (0.77 response rate); strong github activity (88); saved by 31 recruiters recently.
+CAND_0053591,20,0.691396,AI Engineer with 5.3 yrs and direct JD-relevant expertise in Embeddings. High recruiter engagement (0.81 response rate); strong github activity (76); saved by 40 recruiters recently.
+CAND_0076482,21,0.691084,ML Engineer with 6.6 yrs and direct JD-relevant expertise in Pinecone. High recruiter engagement (0.86 response rate); strong github activity (79).
+CAND_0049538,22,0.689609,"Applied ML Engineer with 5.8 yrs; advanced skills in Feature Engineering, MLflow, TTS with partial JD overlap. High recruiter engagement (0.72 response rate); strong github activity (91); saved by 60 recruiters recently."
+CAND_0054546,23,0.686542,"AI Research Engineer with 4.9 yrs; advanced skills in Forecasting, Qdrant, Reinforcement Learning with partial JD overlap. High recruiter engagement (0.92 response rate); strong github activity (75); saved by 41 recruiters recently."
+CAND_0079387,24,0.684799,"AI Engineer with 6.9 yrs; advanced skills in Recommendation Systems, Time Series, BM25 with partial JD overlap. High recruiter engagement (0.81 response rate); strong github activity (64); saved by 22 recruiters recently."
+CAND_0014440,25,0.684459,Recommendation Systems Engineer with 6.4 yrs and direct JD-relevant expertise in Elasticsearch. Moderate recruiter engagement (0.64 response rate); strong github activity (90); saved by 33 recruiters recently.
+CAND_0028793,26,0.683828,"Search Engineer with 7.2 yrs; advanced skills in Kubeflow, Learning to Rank, PEFT with partial JD overlap. Moderate recruiter engagement (0.57 response rate); strong github activity (83); saved by 43 recruiters recently."
+CAND_0018722,27,0.683425,Recommendation Systems Engineer with 6.6 yrs and direct JD-relevant expertise in LLMs. High recruiter engagement (0.79 response rate); strong github activity (94); saved by 16 recruiters recently.
+CAND_0019480,28,0.681813,"NLP Engineer with 2.8 yrs; advanced skills in LangChain, BM25, Prompt Engineering with partial JD overlap. High recruiter engagement (0.87 response rate); strong github activity (70); saved by 59 recruiters recently."
+CAND_0010603,29,0.681659,ML Engineer with 5.3 yrs and direct JD-relevant expertise in OpenSearch. High recruiter engagement (0.94 response rate); strong github activity (79); saved by 45 recruiters recently.
+CAND_0002025,30,0.681531,"Senior AI Engineer with 5.9 yrs and direct JD-relevant expertise in OpenSearch, Weaviate, Pinecone. High recruiter engagement (0.80 response rate); strong github activity (97); saved by 22 recruiters recently."
+CAND_0081686,31,0.681492,"Search Engineer with 6.0 yrs; advanced skills in Kubeflow, CNN, Hugging Face Transformers with partial JD overlap. High recruiter engagement (0.91 response rate); saved by 47 recruiters recently."
+CAND_0052431,32,0.681482,ML Engineer with 5.3 yrs and direct JD-relevant expertise in Milvus. High recruiter engagement (0.85 response rate); strong github activity (78); saved by 44 recruiters recently.
+CAND_0074225,33,0.681119,Machine Learning Engineer with 4.3 yrs and direct JD-relevant expertise in Semantic Search. High recruiter engagement (0.91 response rate); saved by 53 recruiters recently.
+CAND_0058146,34,0.681038,AI Research Engineer with 5.1 yrs and direct JD-relevant expertise in LLMs. High recruiter engagement (0.79 response rate); strong github activity (80); saved by 32 recruiters recently.
+CAND_0013536,35,0.680032,"Applied ML Engineer with 14.1 yrs and direct JD-relevant expertise in LLMs, NLP. High recruiter engagement (0.87 response rate); saved by 36 recruiters recently; senior experience level supports seniority match."
+CAND_0048375,36,0.679992,"Computer Vision Engineer with 4.4 yrs; advanced skills in Weights & Biases, BentoML with partial JD overlap. High recruiter engagement (0.83 response rate); strong github activity (82); saved by 26 recruiters recently."
+CAND_0046064,37,0.679767,"Senior NLP Engineer with 8.9 yrs; advanced skills in Image Classification, OpenCV, TTS with partial JD overlap. High recruiter engagement (0.78 response rate); strong github activity (67); saved by 25 recruiters recently; senior experience level supports seniority match."
+CAND_0052682,38,0.679626,"NLP Engineer with 6.6 yrs; advanced skills in TTS, Data Science, Forecasting with partial JD overlap. High recruiter engagement (0.88 response rate); strong github activity (72); saved by 16 recruiters recently."
+CAND_0066999,39,0.677963,Recommendation Systems Engineer with 5.9 yrs and direct JD-relevant expertise in Pinecone. Moderate recruiter engagement (0.63 response rate); strong github activity (94); saved by 29 recruiters recently.
+CAND_0008295,40,0.675193,"AI Research Engineer with 6.5 yrs; advanced skills in BM25, Python, TTS with partial JD overlap. High recruiter engagement (0.89 response rate); saved by 31 recruiters recently."
+CAND_0001930,41,0.674179,Senior Software Engineer (ML) with 6.9 yrs and direct JD-relevant expertise in Milvus. Moderate recruiter engagement (0.65 response rate); strong github activity (76); saved by 40 recruiters recently.
+CAND_0011687,42,0.671337,Senior NLP Engineer with 7.8 yrs and direct JD-relevant expertise in FAISS. High recruiter engagement (0.89 response rate); strong github activity (76); saved by 27 recruiters recently.
+CAND_0050876,43,0.671318,Applied ML Engineer with 6.0 yrs and direct JD-relevant expertise in FAISS. Moderate recruiter engagement (0.67 response rate); strong github activity (86).
+CAND_0024990,44,0.67106,Junior ML Engineer with 5.2 yrs and direct JD-relevant expertise in Elasticsearch. High recruiter engagement (0.83 response rate); strong github activity (80); saved by 26 recruiters recently.
+CAND_0018499,45,0.668601,"Senior Machine Learning Engineer with 7.2 yrs and direct JD-relevant expertise in Pinecone, Information Retrieval. Moderate recruiter engagement (0.61 response rate); strong github activity (95); saved by 16 recruiters recently."
+CAND_0044883,46,0.66853,AI Engineer with 6.3 yrs and direct JD-relevant expertise in Embeddings. High recruiter engagement (0.84 response rate); strong github activity (70); saved by 59 recruiters recently.
+CAND_0016163,47,0.668495,"Applied ML Engineer with 6.7 yrs; advanced skills in Hugging Face Transformers, Computer Vision, Time Series with partial JD overlap. High recruiter engagement (0.72 response rate); strong github activity (95); saved by 13 recruiters recently."
+CAND_0075481,48,0.668447,"AI Research Engineer with 3.9 yrs; advanced skills in YOLO, MLOps, CNN with partial JD overlap. High recruiter engagement (0.88 response rate); strong github activity (76); saved by 48 recruiters recently."
+CAND_0081480,49,0.668089,"Computer Vision Engineer with 5.6 yrs and direct JD-relevant expertise in Fine-tuning LLMs, FAISS. High recruiter engagement (0.85 response rate); strong github activity (61); saved by 31 recruiters recently."
+CAND_0003791,50,0.66641,ML Engineer with 6.6 yrs and direct JD-relevant expertise in LLMs. Moderate recruiter engagement (0.66 response rate); saved by 34 recruiters recently.
+CAND_0096142,51,0.665685,Applied ML Engineer with 5.0 yrs and direct JD-relevant expertise in Weaviate. High recruiter engagement (0.84 response rate); strong github activity (80); saved by 18 recruiters recently.
+CAND_0061265,52,0.66567,Recommendation Systems Engineer with 6.6 yrs and direct JD-relevant expertise in Vector Search. High recruiter engagement (0.94 response rate); strong github activity (80); saved by 24 recruiters recently.
+CAND_0050553,53,0.664574,"ML Engineer with 3.6 yrs; advanced skills in Feature Engineering, Statistical Modeling, LlamaIndex with partial JD overlap. High recruiter engagement (0.95 response rate); strong github activity (70); saved by 50 recruiters recently."
+CAND_0093547,54,0.664429,"Senior Machine Learning Engineer with 2.9 yrs; advanced skills in Python, QLoRA, Kubeflow with partial JD overlap. High recruiter engagement (0.75 response rate); saved by 57 recruiters recently."
+CAND_0012957,55,0.664299,"Search Engineer with 4.9 yrs; advanced skills in PEFT, Deep Learning, BentoML with partial JD overlap. Moderate recruiter engagement (0.67 response rate); saved by 54 recruiters recently."
+CAND_0058783,56,0.662529,"Computer Vision Engineer with 3.2 yrs and direct JD-relevant expertise in Fine-tuning LLMs, Milvus. High recruiter engagement (0.92 response rate); saved by 50 recruiters recently."
+CAND_0078042,57,0.661354,"Applied ML Engineer with 4.7 yrs; advanced skills in Diffusion Models, OpenCV with partial JD overlap. High recruiter engagement (0.91 response rate); strong github activity (84)."
+CAND_0059504,58,0.661227,Junior ML Engineer with 3.3 yrs and direct JD-relevant expertise in Vector Search. High recruiter engagement (0.83 response rate); strong github activity (64); saved by 39 recruiters recently.
+CAND_0006567,59,0.658483,"Senior AI Engineer with 7.9 yrs and direct JD-relevant expertise in Search Backend, Vector Representations, NLP. High recruiter engagement (0.79 response rate); saved by 76 recruiters recently."
+CAND_0003609,60,0.657865,Senior Software Engineer (ML) with 6.1 yrs and direct JD-relevant expertise in Fine-tuning LLMs. Moderate recruiter engagement (0.50 response rate); strong github activity (65); saved by 45 recruiters recently.
+CAND_0083307,61,0.657146,Search Engineer with 7.8 yrs and direct JD-relevant expertise in Semantic Search. High recruiter engagement (0.70 response rate); strong github activity (69); saved by 28 recruiters recently.
+CAND_0081053,62,0.65713,"NLP Engineer with 5.4 yrs; advanced skills in Qdrant, OpenCV, Haystack with partial JD overlap. High recruiter engagement (0.83 response rate); strong github activity (78); saved by 40 recruiters recently."
+CAND_0002344,63,0.657048,"Senior Software Engineer (ML) with 4.7 yrs; advanced skills in TensorFlow, MLOps, Image Classification with partial JD overlap. High recruiter engagement (0.83 response rate); strong github activity (82); saved by 41 recruiters recently; flag: high endorsements but weak skill assessment."
+CAND_0061339,64,0.656116,"Search Engineer with 4.2 yrs; advanced skills in YOLO, BentoML, TensorFlow with partial JD overlap. High recruiter engagement (0.90 response rate); strong github activity (86)."
+CAND_0092706,65,0.655337,"AI Research Engineer with 5.8 yrs; advanced skills in Weights & Biases, Sentence Transformers, MLOps with partial JD overlap. High recruiter engagement (0.78 response rate); strong github activity (65); saved by 47 recruiters recently."
+CAND_0068932,66,0.655177,ML Engineer with 5.2 yrs and direct JD-relevant expertise in RAG. High recruiter engagement (0.82 response rate); strong github activity (70); saved by 26 recruiters recently.
+CAND_0037566,67,0.653891,Machine Learning Engineer with 6.9 yrs and direct JD-relevant expertise in NLP. Moderate recruiter engagement (0.50 response rate); strong github activity (73); saved by 23 recruiters recently.
+CAND_0069905,68,0.653326,"Applied ML Engineer with 6.6 yrs; advanced skills in Speech Recognition, Image Classification, TensorFlow with partial JD overlap. High recruiter engagement (0.78 response rate); saved by 57 recruiters recently."
+CAND_0011125,69,0.653275,"Junior ML Engineer with 6.6 yrs and direct JD-relevant expertise in Information Retrieval, Embeddings, Milvus. Moderate recruiter engagement (0.58 response rate); strong github activity (84)."
+CAND_0052195,70,0.653236,Computer Vision Engineer with 6.3 yrs and direct JD-relevant expertise in Information Retrieval. Moderate recruiter engagement (0.69 response rate); strong github activity (71); saved by 45 recruiters recently.
+CAND_0090584,71,0.653188,"ML Engineer with 5.1 yrs and direct JD-relevant expertise in OpenSearch, RAG. Moderate recruiter engagement (0.64 response rate); strong github activity (83); saved by 34 recruiters recently."
+CAND_0054100,72,0.65206,Junior ML Engineer with 6.0 yrs and direct JD-relevant expertise in Vector Search. High recruiter engagement (0.79 response rate); strong github activity (73); saved by 30 recruiters recently.
+CAND_0084819,73,0.651673,Search Engineer with 4.5 yrs and direct JD-relevant expertise in Semantic Search. High recruiter engagement (0.74 response rate); saved by 50 recruiters recently.
+CAND_0047492,74,0.651403,ML Engineer with 4.8 yrs and direct JD-relevant expertise in Information Retrieval. High recruiter engagement (0.71 response rate); strong github activity (65); saved by 42 recruiters recently.
+CAND_0099806,75,0.650444,"AI Engineer with 4.6 yrs and direct JD-relevant expertise in RAG, pgvector. High recruiter engagement (0.76 response rate); strong github activity (87)."
+CAND_0081846,76,0.6497,Lead AI Engineer with 6.7 yrs and direct JD-relevant expertise in pgvector. High recruiter engagement (0.73 response rate); saved by 62 recruiters recently.
+CAND_0080534,77,0.64947,"ML Engineer with 3.8 yrs and direct JD-relevant expertise in Elasticsearch, OpenSearch. High recruiter engagement (0.91 response rate); strong github activity (81); saved by 24 recruiters recently."
+CAND_0077285,78,0.64946,"Recommendation Systems Engineer with 5.5 yrs and direct JD-relevant expertise in Pinecone, Milvus. Moderate recruiter engagement (0.56 response rate); strong github activity (76); saved by 65 recruiters recently."
+CAND_0027801,79,0.647357,NLP Engineer with 7.4 yrs and direct JD-relevant expertise in Vector Search. Moderate recruiter engagement (0.65 response rate); strong github activity (63); saved by 65 recruiters recently.
+CAND_0008425,80,0.646838,"Senior NLP Engineer with 7.8 yrs; advanced skills in Weights & Biases, TensorFlow, Prompt Engineering with partial JD overlap. Moderate recruiter engagement (0.66 response rate); saved by 55 recruiters recently."
+CAND_0043381,81,0.645711,AI Research Engineer with 3.6 yrs and direct JD-relevant expertise in OpenSearch. High recruiter engagement (0.78 response rate); strong github activity (71); saved by 38 recruiters recently.
+CAND_0007009,82,0.644956,"Recommendation Systems Engineer with 7.9 yrs; advanced skills in Statistical Modeling, CNN, Forecasting with partial JD overlap. Moderate recruiter engagement (0.62 response rate); strong github activity (69)."
+CAND_0064904,83,0.644046,"AI Engineer with 4.9 yrs; advanced skills in Hugging Face Transformers, Forecasting, MLOps with partial JD overlap. High recruiter engagement (0.78 response rate); saved by 39 recruiters recently."
+CAND_0045778,84,0.643433,"Senior Software Engineer (ML) with 4.4 yrs and direct JD-relevant expertise in Milvus, LLMs. High recruiter engagement (0.83 response rate); strong github activity (84); saved by 18 recruiters recently."
+CAND_0080465,85,0.642411,ML Engineer with 4.2 yrs and direct JD-relevant expertise in Milvus. High recruiter engagement (0.83 response rate); strong github activity (81); saved by 46 recruiters recently; flag: high endorsements but weak skill assessment.
+CAND_0058688,86,0.641446,"AI Engineer with 6.7 yrs; advanced skills in Object Detection, Computer Vision, TensorFlow with partial JD overlap. High recruiter engagement (0.74 response rate); saved by 36 recruiters recently."
+CAND_0061655,87,0.641086,"Machine Learning Engineer with 4.6 yrs; advanced skills in Haystack, Time Series, PyTorch with partial JD overlap. High recruiter engagement (0.88 response rate); saved by 19 recruiters recently."
+CAND_0093331,88,0.640168,NLP Engineer with 16.1 yrs and direct JD-relevant expertise in Embeddings. Moderate recruiter engagement (0.41 response rate); strong github activity (74); saved by 30 recruiters recently; senior experience level supports seniority match; flag: high recruiter demand but low engagement.
+CAND_0065195,89,0.64012,"Search Engineer with 5.1 yrs; advanced skills in Diffusion Models, Hugging Face Transformers, MLOps with partial JD overlap. High recruiter engagement (0.80 response rate); strong github activity (87); saved by 13 recruiters recently."
+CAND_0046353,90,0.639772,ML Engineer with 6.4 yrs and direct JD-relevant expertise in FAISS. High recruiter engagement (0.73 response rate); strong github activity (77).
+CAND_0011643,91,0.63938,AI Research Engineer with 4.2 yrs and direct JD-relevant expertise in Pinecone. High recruiter engagement (0.85 response rate); strong github activity (85); saved by 17 recruiters recently.
+CAND_0080603,92,0.638933,Senior Data Engineer with 5.8 yrs and direct JD-relevant expertise in Pinecone. High recruiter engagement (0.76 response rate); saved by 28 recruiters recently.
+CAND_0040887,93,0.638853,Machine Learning Engineer with 4.7 yrs and direct JD-relevant expertise in FAISS. High recruiter engagement (0.84 response rate); saved by 50 recruiters recently.
+CAND_0031143,94,0.638178,"ML Engineer with 5.5 yrs; advanced skills in QLoRA, Python, TTS with partial JD overlap. High recruiter engagement (0.84 response rate); strong github activity (76); saved by 25 recruiters recently."
+CAND_0088354,95,0.635049,Junior ML Engineer with 6.5 yrs and direct JD-relevant expertise in OpenSearch. High recruiter engagement (0.80 response rate); strong github activity (72); saved by 24 recruiters recently.
+CAND_0065786,96,0.635007,"AI Specialist with 4.9 yrs; advanced skills in Learning to Rank, Kubeflow, BentoML with partial JD overlap. High recruiter engagement (0.89 response rate); strong github activity (71); saved by 32 recruiters recently."
+CAND_0094165,97,0.63412,AI Research Engineer with 5.8 yrs and direct JD-relevant expertise in pgvector. High recruiter engagement (0.78 response rate); strong github activity (82); saved by 16 recruiters recently.
+CAND_0032887,98,0.634086,ML Engineer with 6.1 yrs and direct JD-relevant expertise in NLP. High recruiter engagement (0.81 response rate); saved by 32 recruiters recently.
+CAND_0043304,99,0.633753,"Junior ML Engineer with 6.5 yrs; advanced skills in Sentence Transformers, Machine Learning, Diffusion Models with partial JD overlap. High recruiter engagement (0.75 response rate); strong github activity (68); saved by 20 recruiters recently."
+CAND_0043384,100,0.633745,"Computer Vision Engineer with 5.2 yrs; advanced skills in Kubeflow, Diffusion Models, Reinforcement Learning with partial JD overlap. High recruiter engagement (0.83 response rate); strong github activity (63); saved by 48 recruiters recently."
