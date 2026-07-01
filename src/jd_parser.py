@@ -11,30 +11,44 @@ def extract_text(docx_path):
             text.append(para.text.strip())
 
     return "\n".join(text)
+def extract_job_title(text):
+    lines = text.split("\n")
+
+    for line in lines:
+        line = line.strip()
+        if 3 < len(line) < 100:
+            return line
+
+    return "Unknown Role"
 
 
 def parse_job_description(docx_path):
     text = extract_text(docx_path)
     lower_text = text.lower()
+    job_title = extract_job_title(text)
 
     skill_keywords = [
-        "python",
-        "machine learning",
-        "deep learning",
-        "nlp",
-        "rag",
-        "llm",
-        "embeddings",
-        "vector database",
-        "retrieval",
-        "ranking",
-        "sql",
-        "pytorch",
-        "tensorflow",
-        "aws",
-        "gcp",
-        "docker",
-        "kubernetes"
+        # AI
+        "python", "machine learning", "deep learning", "nlp",
+        "rag", "llm", "embeddings", "vector database",
+        "retrieval", "ranking", "pytorch", "tensorflow",
+
+        # Backend
+        "sql", "postgresql", "mysql", "redis", "kafka",
+        "aws", "gcp", "azure", "docker", "kubernetes",
+        "microservices", "distributed systems",
+        "api", "rest", "fastapi", "django",
+
+        # Frontend
+        "react", "javascript", "typescript",
+
+        # Marketing
+        "seo", "sem", "google analytics",
+        "content marketing", "campaign management",
+
+        # Sales
+        "crm", "lead generation",
+        "negotiation", "sales strategy"
     ]
 
     found_skills = []
@@ -52,14 +66,7 @@ def parse_job_description(docx_path):
     elif "intern" in lower_text:
         seniority = "intern"
 
-    role_type = "general"
-
-    if "retrieval" in lower_text or "search" in lower_text:
-        role_type = "retrieval"
-    elif "recommendation" in lower_text:
-        role_type = "recommendation"
-    elif "ml engineer" in lower_text:
-        role_type = "ml"
+    
 
     company_style = "enterprise"
 
@@ -67,13 +74,24 @@ def parse_job_description(docx_path):
         company_style = "startup"
 
     return {
+        "job_title": job_title,
         "required_skills": found_skills,
         "seniority": seniority,
-        "role_type": role_type,
         "company_style": company_style
     }
+def extract_job_title(text):
+    lines = text.split("\n")
+
+    for line in lines:
+        line = line.strip()
+        if len(line) > 3 and len(line) < 100:
+            return line
+
+    return "Unknown Role"
 
 
 if __name__ == "__main__":
     jd = parse_job_description("../data/raw/job_description.docx")
-    print(jd)
+    print("Job title:", jd["job_title"])
+    print("Skills:", jd["required_skills"])
+    print("Seniority:", jd["seniority"])

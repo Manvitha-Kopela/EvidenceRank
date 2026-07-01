@@ -7,27 +7,53 @@ import os
 
 print("Loading embedding model...")
 model = SentenceTransformer("all-MiniLM-L6-v2")
-JD_INFO = parse_job_description("../data/raw/job_description.docx")
 
-JD_SKILL_MAP = {
-    "python": ["python"],
-    "retrieval": ["retrieval", "bm25", "rag"],
-    "ranking": ["ranking", "reranking"],
-    "vector_db": ["milvus", "pinecone", "faiss", "vector database"],
-    "ml": ["machine learning", "ml", "nlp", "llm", "fine-tuning"]
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+JD_PATH = os.path.join(BASE_DIR, "data", "raw", "job_sales.docx") # change file here when testing
+JD_INFO = parse_job_description(JD_PATH)
+print("Using JD:", JD_PATH)
+print("Parsed JD:", JD_INFO)
+
+
+SKILL_ALIASES = {
+    "postgresql": ["postgresql", "postgres", "psql"],
+    "machine learning": ["machine learning", "ml"],
+    "kubernetes": ["kubernetes", "k8s"],
+    "amazon web services": ["aws", "amazon web services"],
+    "javascript": ["javascript", "js"],
+    "artificial intelligence": ["ai", "artificial intelligence"]
 }
+JD_SKILL_MAP = {}
 
-JD_TEXT = """
-Staff Machine Learning Engineer with expertise in RAG, retrieval systems,
-vector databases, embeddings, ranking and LLM systems.
-Building production-scale ML pipelines for search and recommendation.
+for skill in JD_INFO["required_skills"]:
+    skill = skill.lower().strip()
+
+    if skill in SKILL_ALIASES:
+        JD_SKILL_MAP[skill] = SKILL_ALIASES[skill]
+    else:
+        JD_SKILL_MAP[skill] = [skill]
+# ADD DEBUG PRINTS HERE
+print("Current JD skills:", JD_INFO["required_skills"])
+print("Generated skill map:", JD_SKILL_MAP)
+
+seniority = JD_INFO.get("seniority", "")
+skills = JD_INFO.get("required_skills", [])
+
+job_title = JD_INFO.get("job_title", "Unknown Role")
+
+JD_TEXT = f"""
+Job Title: {job_title}
+Seniority: {seniority}
+Required skills: {', '.join(skills)}
+Company style: {JD_INFO.get("company_style", "")}
 """
+print("Semantic JD Text:")
+print(JD_TEXT)
 
 jd_embedding = model.encode(JD_TEXT)
 
-EMBEDDINGS_CACHE = "../outputs/candidate_embeddings.npy"
-EMBEDDINGS_IDS_CACHE = "../outputs/candidate_ids.npy"
-
+EMBEDDINGS_CACHE = os.path.join(BASE_DIR, "outputs", "candidate_embeddings.npy")
+EMBEDDINGS_IDS_CACHE = os.path.join(BASE_DIR, "outputs", "candidate_ids.npy")
 _embedding_map = {}
 
 def load_embedding_cache():
@@ -67,13 +93,34 @@ def compute_semantic_score(candidate):
         candidate_embedding = model.encode(text)
     score = cosine_similarity([jd_embedding], [candidate_embedding])[0][0]
     return float(score)
+def compute_title_similarity(candidate):
+    candidate_title = candidate["profile"].get("current_title", "")
+    jd_title = JD_INFO["job_title"]
+
+    jd_emb = model.encode(jd_title)
+    candidate_emb = model.encode(candidate_title)
+
+    score = cosine_similarity([jd_emb], [candidate_emb])[0][0]
+    return float(score)
 
 def compute_skill_overlap(skill_names):
     matched = 0
-    for category, aliases in JD_SKILL_MAP.items():
-        found = any(alias in skill for skill in skill_names for alias in aliases)
+    candidate_skills = [s.lower() for s in skill_names]
+
+    for _, aliases in JD_SKILL_MAP.items():
+        found = False
+
+        for alias in aliases:
+            if any(alias in skill for skill in candidate_skills):
+                found = True
+                break
+
         if found:
             matched += 1
+
+    if len(JD_SKILL_MAP) == 0:
+        return 0
+
     return matched / len(JD_SKILL_MAP)
 
 def normalize(value, min_val, max_val):
@@ -87,6 +134,7 @@ def qualification_features(candidate):
     skill_names = [s["name"].lower() for s in candidate.get("skills", [])]
     skill_overlap = compute_skill_overlap(skill_names)
     semantic_score = compute_semantic_score(candidate)
+    title_similarity = compute_title_similarity(candidate)
     title = profile.get("current_title", "").lower()
     jd_seniority = JD_INFO["seniority"]
 
@@ -111,22 +159,68 @@ def qualification_features(candidate):
         "years_experience": years_exp,
         "skill_overlap": skill_overlap,
         "semantic_score": semantic_score,
-        "title_score": title_score
+        "title_score": title_score,
+        "title_similarity": title_similarity
     }
+
+def derive_behavior_weights():
+    jd_text = (
+        JD_INFO["job_title"] +
+        " " +
+        " ".join(JD_INFO["required_skills"])
+    ).lower()
+
+    github = 0.1
+    response = 0.3
+    completion = 0.3
+    saves = 0.3
+
+    technical_words = [
+        "python", "aws", "docker",
+        "kubernetes", "engineer", "developer"
+    ]
+
+    business_words = [
+        "sales", "marketing", "client",
+        "negotiation", "communication"
+    ]
+
+    if any(word in jd_text for word in technical_words):
+        github += 0.25
+
+    if any(word in jd_text for word in business_words):
+        response += 0.15
+        saves += 0.15
+
+    total = github + response + completion + saves
+
+    return {
+        "github": github / total,
+        "response": response / total,
+        "completion": completion / total,
+        "saves": saves / total
+    }
+
 
 def behavioral_features(candidate):
     signals = candidate["redrob_signals"]
-    github = signals.get("github_activity_score", 0)
+    weights = derive_behavior_weights()
+
+    github = normalize(signals.get("github_activity_score", 0), 0, 100)
     response = signals.get("recruiter_response_rate", 0)
     completion = signals.get("interview_completion_rate", 0)
-    saves = signals.get("saved_by_recruiters_30d", 0)
-    return {
-        "github_score": normalize(github, 0, 100),
-        "response_rate": response,
-        "completion_rate": completion,
-        "recruiter_saves": normalize(saves, 0, 50)
-    }
+    saves = normalize(signals.get("saved_by_recruiters_30d", 0), 0, 50)
 
+    behavior_score = (
+        weights["github"] * github
+        + weights["response"] * response
+        + weights["completion"] * completion
+        + weights["saves"] * saves
+    )
+
+    return {
+        "behavior_score": behavior_score
+    }
 def contradiction_features(candidate):
     profile = candidate["profile"]
     signals = candidate["redrob_signals"]

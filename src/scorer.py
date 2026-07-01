@@ -6,12 +6,7 @@ def calculate_scores(q, b, c, conf):
         + 0.35 * q["semantic_score"]
     )
 
-    behavior_score = (
-        0.35 * b["github_score"]
-        + 0.25 * b["response_rate"]
-        + 0.20 * b["completion_rate"]
-        + 0.20 * b["recruiter_saves"]
-    )
+    behavior_score = b["behavior_score"]
 
     # Scaled penalty: 0 contradictions = 0, 5 contradictions = 0.25
     contradiction_penalty = (c["contradiction_score"] / 5) * 0.25
@@ -33,17 +28,21 @@ def calculate_scores(q, b, c, conf):
 
 def calculate_risk(candidate):
     signals = candidate["redrob_signals"]
+
     notice = signals.get("notice_period_days", 0)
     response = signals.get("recruiter_response_rate", 0)
     relocate = signals.get("willing_to_relocate", True)
 
-    notice_risk = min(notice / 90, 1)
+    # Softer notice scaling
+    notice_risk = min(notice / 180, 1)
+
     response_risk = 1 - response
-    relocation_risk = 0 if relocate else 0.5
+    relocation_risk = 0 if relocate else 0.4
 
     risk_score = (
-        0.5 * notice_risk +
-        0.3 * response_risk +
-        0.2 * relocation_risk
+        0.35 * notice_risk +
+        0.40 * response_risk +
+        0.25 * relocation_risk
     )
+
     return min(risk_score, 1)

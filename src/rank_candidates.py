@@ -46,6 +46,24 @@ df.to_csv("../outputs/ranked_candidates.csv", index=False)
 
 print("\nTop 10 candidates:")
 print(df[["rank", "candidate_id", "fit_score", "confidence", "risk_score", "contradictions"]].head(10))
+top_ids = df.head(5)["candidate_id"].tolist()
+
+print("\n===== Manual Audit =====")
+
+for candidate in candidates:
+    if candidate["candidate_id"] in top_ids:
+        profile = candidate["profile"]
+
+        print("\n----------------------")
+        print("Candidate:", candidate["candidate_id"])
+        print("Title:", profile.get("current_title", "N/A"))
+        print("Experience:", profile.get("years_of_experience", 0))
+
+        skills = [s["name"] for s in candidate.get("skills", [])[:15]]
+        print("Skills:", skills)
+
+        summary = profile.get("summary", "")
+        print("Summary:", summary[:300])
 print(f"\nTotal scored: {len(df)}")
 print("\nContradiction distribution:")
 print(df["contradictions"].value_counts().sort_index())
