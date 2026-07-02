@@ -1,0 +1,602 @@
+[
+  {
+    "candidate_id":"CAND_0088025",
+    "rank":1,
+    "score":0.766347,
+    "reasoning":"Staff Machine Learning Engineer with 8.6 yrs and direct JD-relevant expertise in Pinecone. High recruiter engagement (0.83 response rate); strong github activity (75); saved by 19 recruiters recently; senior experience level supports seniority match."
+  },
+  {
+    "candidate_id":"CAND_0077337",
+    "rank":2,
+    "score":0.746919,
+    "reasoning":"Staff Machine Learning Engineer with 7.0 yrs and direct JD-relevant expertise in Semantic Search, Pinecone. High recruiter engagement (0.95 response rate); strong github activity (68); saved by 32 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0051615",
+    "rank":3,
+    "score":0.737449,
+    "reasoning":"Search Engineer with 4.6 yrs and direct JD-relevant expertise in Milvus. High recruiter engagement (0.88 response rate); strong github activity (95); saved by 42 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0076163",
+    "rank":4,
+    "score":0.737062,
+    "reasoning":"NLP Engineer with 6.9 yrs and direct JD-relevant expertise in Weaviate. High recruiter engagement (0.84 response rate); strong github activity (85); saved by 62 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0055992",
+    "rank":5,
+    "score":0.735811,
+    "reasoning":"AI Engineer with 16.9 yrs and direct JD-relevant expertise in RAG. High recruiter engagement (0.72 response rate); strong github activity (65); saved by 57 recruiters recently; senior experience level supports seniority match."
+  },
+  {
+    "candidate_id":"CAND_0071974",
+    "rank":6,
+    "score":0.73581,
+    "reasoning":"Senior AI Engineer with 7.8 yrs; advanced skills in LoRA, Learning to Rank, PEFT with partial JD overlap. High recruiter engagement (0.76 response rate); strong github activity (83); saved by 50 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0061257",
+    "rank":7,
+    "score":0.733795,
+    "reasoning":"Staff Machine Learning Engineer with 8.0 yrs; advanced skills in PEFT, Haystack, Time Series with partial JD overlap. High recruiter engagement (0.87 response rate); saved by 80 recruiters recently; senior experience level supports seniority match."
+  },
+  {
+    "candidate_id":"CAND_0020708",
+    "rank":8,
+    "score":0.726903,
+    "reasoning":"Search Engineer with 4.2 yrs and direct JD-relevant expertise in NLP. High recruiter engagement (0.84 response rate); strong github activity (84); saved by 52 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0064326",
+    "rank":9,
+    "score":0.72574,
+    "reasoning":"Search Engineer with 7.6 yrs and direct JD-relevant expertise in Milvus, Semantic Search. High recruiter engagement (0.94 response rate); strong github activity (61); saved by 60 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0039754",
+    "rank":10,
+    "score":0.72348,
+    "reasoning":"Senior Applied Scientist with 16.2 yrs and direct JD-relevant expertise in LLMs. High recruiter engagement (0.81 response rate); strong github activity (78); saved by 51 recruiters recently; senior experience level supports seniority match."
+  },
+  {
+    "candidate_id":"CAND_0041669",
+    "rank":11,
+    "score":0.719232,
+    "reasoning":"Recommendation Systems Engineer with 8.0 yrs and direct JD-relevant expertise in FAISS. High recruiter engagement (0.77 response rate); strong github activity (71); saved by 37 recruiters recently; senior experience level supports seniority match."
+  },
+  {
+    "candidate_id":"CAND_0017960",
+    "rank":12,
+    "score":0.717555,
+    "reasoning":"Recommendation Systems Engineer with 7.7 yrs; advanced skills in LlamaIndex, Machine Learning, Python with partial JD overlap. High recruiter engagement (0.72 response rate); strong github activity (92); saved by 43 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0095619",
+    "rank":13,
+    "score":0.707501,
+    "reasoning":"NLP Engineer with 15.6 yrs; advanced skills in Feature Engineering, MLflow, Hugging Face Transformers with partial JD overlap. High recruiter engagement (0.90 response rate); saved by 55 recruiters recently; senior experience level supports seniority match."
+  },
+  {
+    "candidate_id":"CAND_0035879",
+    "rank":14,
+    "score":0.707031,
+    "reasoning":"AI Research Engineer with 4.5 yrs; advanced skills in Statistical Modeling, Speech Recognition, Python with partial JD overlap. High recruiter engagement (0.82 response rate); strong github activity (84); saved by 37 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0039383",
+    "rank":15,
+    "score":0.706408,
+    "reasoning":"Applied ML Engineer with 7.1 yrs; advanced skills in GANs, Kubeflow, Recommendation Systems with partial JD overlap. Moderate recruiter engagement (0.61 response rate); strong github activity (86); saved by 34 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0091534",
+    "rank":16,
+    "score":0.704682,
+    "reasoning":"AI Engineer with 16.6 yrs; advanced skills in Hugging Face Transformers, Diffusion Models, Qdrant with partial JD overlap. High recruiter engagement (0.84 response rate); strong github activity (66); saved by 49 recruiters recently; senior experience level supports seniority match."
+  },
+  {
+    "candidate_id":"CAND_0052328",
+    "rank":17,
+    "score":0.699056,
+    "reasoning":"Recommendation Systems Engineer with 6.5 yrs; advanced skills in LoRA, Image Classification, Recommendation Systems with partial JD overlap. High recruiter engagement (0.79 response rate); strong github activity (78); saved by 31 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0080766",
+    "rank":18,
+    "score":0.69319,
+    "reasoning":"Staff Machine Learning Engineer with 8.8 yrs and direct JD-relevant expertise in Information Retrieval Systems. Moderate recruiter engagement (0.66 response rate); saved by 27 recruiters recently; senior experience level supports seniority match."
+  },
+  {
+    "candidate_id":"CAND_0074735",
+    "rank":19,
+    "score":0.691744,
+    "reasoning":"Applied ML Engineer with 5.5 yrs and direct JD-relevant expertise in Weaviate. High recruiter engagement (0.77 response rate); strong github activity (88); saved by 31 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0053591",
+    "rank":20,
+    "score":0.691396,
+    "reasoning":"AI Engineer with 5.3 yrs and direct JD-relevant expertise in Embeddings. High recruiter engagement (0.81 response rate); strong github activity (76); saved by 40 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0076482",
+    "rank":21,
+    "score":0.691084,
+    "reasoning":"ML Engineer with 6.6 yrs and direct JD-relevant expertise in Pinecone. High recruiter engagement (0.86 response rate); strong github activity (79)."
+  },
+  {
+    "candidate_id":"CAND_0049538",
+    "rank":22,
+    "score":0.689609,
+    "reasoning":"Applied ML Engineer with 5.8 yrs; advanced skills in Feature Engineering, MLflow, TTS with partial JD overlap. High recruiter engagement (0.72 response rate); strong github activity (91); saved by 60 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0054546",
+    "rank":23,
+    "score":0.686542,
+    "reasoning":"AI Research Engineer with 4.9 yrs; advanced skills in Forecasting, Qdrant, Reinforcement Learning with partial JD overlap. High recruiter engagement (0.92 response rate); strong github activity (75); saved by 41 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0079387",
+    "rank":24,
+    "score":0.684799,
+    "reasoning":"AI Engineer with 6.9 yrs; advanced skills in Recommendation Systems, Time Series, BM25 with partial JD overlap. High recruiter engagement (0.81 response rate); strong github activity (64); saved by 22 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0014440",
+    "rank":25,
+    "score":0.684459,
+    "reasoning":"Recommendation Systems Engineer with 6.4 yrs and direct JD-relevant expertise in Elasticsearch. Moderate recruiter engagement (0.64 response rate); strong github activity (90); saved by 33 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0028793",
+    "rank":26,
+    "score":0.683828,
+    "reasoning":"Search Engineer with 7.2 yrs; advanced skills in Kubeflow, Learning to Rank, PEFT with partial JD overlap. Moderate recruiter engagement (0.57 response rate); strong github activity (83); saved by 43 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0018722",
+    "rank":27,
+    "score":0.683425,
+    "reasoning":"Recommendation Systems Engineer with 6.6 yrs and direct JD-relevant expertise in LLMs. High recruiter engagement (0.79 response rate); strong github activity (94); saved by 16 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0019480",
+    "rank":28,
+    "score":0.681813,
+    "reasoning":"NLP Engineer with 2.8 yrs; advanced skills in LangChain, BM25, Prompt Engineering with partial JD overlap. High recruiter engagement (0.87 response rate); strong github activity (70); saved by 59 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0010603",
+    "rank":29,
+    "score":0.681659,
+    "reasoning":"ML Engineer with 5.3 yrs and direct JD-relevant expertise in OpenSearch. High recruiter engagement (0.94 response rate); strong github activity (79); saved by 45 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0002025",
+    "rank":30,
+    "score":0.681531,
+    "reasoning":"Senior AI Engineer with 5.9 yrs and direct JD-relevant expertise in OpenSearch, Weaviate, Pinecone. High recruiter engagement (0.80 response rate); strong github activity (97); saved by 22 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0081686",
+    "rank":31,
+    "score":0.681492,
+    "reasoning":"Search Engineer with 6.0 yrs; advanced skills in Kubeflow, CNN, Hugging Face Transformers with partial JD overlap. High recruiter engagement (0.91 response rate); saved by 47 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0052431",
+    "rank":32,
+    "score":0.681482,
+    "reasoning":"ML Engineer with 5.3 yrs and direct JD-relevant expertise in Milvus. High recruiter engagement (0.85 response rate); strong github activity (78); saved by 44 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0074225",
+    "rank":33,
+    "score":0.681119,
+    "reasoning":"Machine Learning Engineer with 4.3 yrs and direct JD-relevant expertise in Semantic Search. High recruiter engagement (0.91 response rate); saved by 53 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0058146",
+    "rank":34,
+    "score":0.681038,
+    "reasoning":"AI Research Engineer with 5.1 yrs and direct JD-relevant expertise in LLMs. High recruiter engagement (0.79 response rate); strong github activity (80); saved by 32 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0013536",
+    "rank":35,
+    "score":0.680032,
+    "reasoning":"Applied ML Engineer with 14.1 yrs and direct JD-relevant expertise in LLMs, NLP. High recruiter engagement (0.87 response rate); saved by 36 recruiters recently; senior experience level supports seniority match."
+  },
+  {
+    "candidate_id":"CAND_0048375",
+    "rank":36,
+    "score":0.679992,
+    "reasoning":"Computer Vision Engineer with 4.4 yrs; advanced skills in Weights & Biases, BentoML with partial JD overlap. High recruiter engagement (0.83 response rate); strong github activity (82); saved by 26 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0046064",
+    "rank":37,
+    "score":0.679767,
+    "reasoning":"Senior NLP Engineer with 8.9 yrs; advanced skills in Image Classification, OpenCV, TTS with partial JD overlap. High recruiter engagement (0.78 response rate); strong github activity (67); saved by 25 recruiters recently; senior experience level supports seniority match."
+  },
+  {
+    "candidate_id":"CAND_0052682",
+    "rank":38,
+    "score":0.679626,
+    "reasoning":"NLP Engineer with 6.6 yrs; advanced skills in TTS, Data Science, Forecasting with partial JD overlap. High recruiter engagement (0.88 response rate); strong github activity (72); saved by 16 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0066999",
+    "rank":39,
+    "score":0.677963,
+    "reasoning":"Recommendation Systems Engineer with 5.9 yrs and direct JD-relevant expertise in Pinecone. Moderate recruiter engagement (0.63 response rate); strong github activity (94); saved by 29 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0008295",
+    "rank":40,
+    "score":0.675193,
+    "reasoning":"AI Research Engineer with 6.5 yrs; advanced skills in BM25, Python, TTS with partial JD overlap. High recruiter engagement (0.89 response rate); saved by 31 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0001930",
+    "rank":41,
+    "score":0.674179,
+    "reasoning":"Senior Software Engineer (ML) with 6.9 yrs and direct JD-relevant expertise in Milvus. Moderate recruiter engagement (0.65 response rate); strong github activity (76); saved by 40 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0011687",
+    "rank":42,
+    "score":0.671337,
+    "reasoning":"Senior NLP Engineer with 7.8 yrs and direct JD-relevant expertise in FAISS. High recruiter engagement (0.89 response rate); strong github activity (76); saved by 27 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0050876",
+    "rank":43,
+    "score":0.671318,
+    "reasoning":"Applied ML Engineer with 6.0 yrs and direct JD-relevant expertise in FAISS. Moderate recruiter engagement (0.67 response rate); strong github activity (86)."
+  },
+  {
+    "candidate_id":"CAND_0024990",
+    "rank":44,
+    "score":0.67106,
+    "reasoning":"Junior ML Engineer with 5.2 yrs and direct JD-relevant expertise in Elasticsearch. High recruiter engagement (0.83 response rate); strong github activity (80); saved by 26 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0018499",
+    "rank":45,
+    "score":0.668601,
+    "reasoning":"Senior Machine Learning Engineer with 7.2 yrs and direct JD-relevant expertise in Pinecone, Information Retrieval. Moderate recruiter engagement (0.61 response rate); strong github activity (95); saved by 16 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0044883",
+    "rank":46,
+    "score":0.66853,
+    "reasoning":"AI Engineer with 6.3 yrs and direct JD-relevant expertise in Embeddings. High recruiter engagement (0.84 response rate); strong github activity (70); saved by 59 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0016163",
+    "rank":47,
+    "score":0.668495,
+    "reasoning":"Applied ML Engineer with 6.7 yrs; advanced skills in Hugging Face Transformers, Computer Vision, Time Series with partial JD overlap. High recruiter engagement (0.72 response rate); strong github activity (95); saved by 13 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0075481",
+    "rank":48,
+    "score":0.668447,
+    "reasoning":"AI Research Engineer with 3.9 yrs; advanced skills in YOLO, MLOps, CNN with partial JD overlap. High recruiter engagement (0.88 response rate); strong github activity (76); saved by 48 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0081480",
+    "rank":49,
+    "score":0.668089,
+    "reasoning":"Computer Vision Engineer with 5.6 yrs and direct JD-relevant expertise in Fine-tuning LLMs, FAISS. High recruiter engagement (0.85 response rate); strong github activity (61); saved by 31 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0003791",
+    "rank":50,
+    "score":0.66641,
+    "reasoning":"ML Engineer with 6.6 yrs and direct JD-relevant expertise in LLMs. Moderate recruiter engagement (0.66 response rate); saved by 34 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0096142",
+    "rank":51,
+    "score":0.665685,
+    "reasoning":"Applied ML Engineer with 5.0 yrs and direct JD-relevant expertise in Weaviate. High recruiter engagement (0.84 response rate); strong github activity (80); saved by 18 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0061265",
+    "rank":52,
+    "score":0.66567,
+    "reasoning":"Recommendation Systems Engineer with 6.6 yrs and direct JD-relevant expertise in Vector Search. High recruiter engagement (0.94 response rate); strong github activity (80); saved by 24 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0050553",
+    "rank":53,
+    "score":0.664574,
+    "reasoning":"ML Engineer with 3.6 yrs; advanced skills in Feature Engineering, Statistical Modeling, LlamaIndex with partial JD overlap. High recruiter engagement (0.95 response rate); strong github activity (70); saved by 50 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0093547",
+    "rank":54,
+    "score":0.664429,
+    "reasoning":"Senior Machine Learning Engineer with 2.9 yrs; advanced skills in Python, QLoRA, Kubeflow with partial JD overlap. High recruiter engagement (0.75 response rate); saved by 57 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0012957",
+    "rank":55,
+    "score":0.664299,
+    "reasoning":"Search Engineer with 4.9 yrs; advanced skills in PEFT, Deep Learning, BentoML with partial JD overlap. Moderate recruiter engagement (0.67 response rate); saved by 54 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0058783",
+    "rank":56,
+    "score":0.662529,
+    "reasoning":"Computer Vision Engineer with 3.2 yrs and direct JD-relevant expertise in Fine-tuning LLMs, Milvus. High recruiter engagement (0.92 response rate); saved by 50 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0078042",
+    "rank":57,
+    "score":0.661354,
+    "reasoning":"Applied ML Engineer with 4.7 yrs; advanced skills in Diffusion Models, OpenCV with partial JD overlap. High recruiter engagement (0.91 response rate); strong github activity (84)."
+  },
+  {
+    "candidate_id":"CAND_0059504",
+    "rank":58,
+    "score":0.661227,
+    "reasoning":"Junior ML Engineer with 3.3 yrs and direct JD-relevant expertise in Vector Search. High recruiter engagement (0.83 response rate); strong github activity (64); saved by 39 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0006567",
+    "rank":59,
+    "score":0.658483,
+    "reasoning":"Senior AI Engineer with 7.9 yrs and direct JD-relevant expertise in Search Backend, Vector Representations, NLP. High recruiter engagement (0.79 response rate); saved by 76 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0003609",
+    "rank":60,
+    "score":0.657865,
+    "reasoning":"Senior Software Engineer (ML) with 6.1 yrs and direct JD-relevant expertise in Fine-tuning LLMs. Moderate recruiter engagement (0.50 response rate); strong github activity (65); saved by 45 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0083307",
+    "rank":61,
+    "score":0.657146,
+    "reasoning":"Search Engineer with 7.8 yrs and direct JD-relevant expertise in Semantic Search. High recruiter engagement (0.70 response rate); strong github activity (69); saved by 28 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0081053",
+    "rank":62,
+    "score":0.65713,
+    "reasoning":"NLP Engineer with 5.4 yrs; advanced skills in Qdrant, OpenCV, Haystack with partial JD overlap. High recruiter engagement (0.83 response rate); strong github activity (78); saved by 40 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0002344",
+    "rank":63,
+    "score":0.657048,
+    "reasoning":"Senior Software Engineer (ML) with 4.7 yrs; advanced skills in TensorFlow, MLOps, Image Classification with partial JD overlap. High recruiter engagement (0.83 response rate); strong github activity (82); saved by 41 recruiters recently; flag: high endorsements but weak skill assessment."
+  },
+  {
+    "candidate_id":"CAND_0061339",
+    "rank":64,
+    "score":0.656116,
+    "reasoning":"Search Engineer with 4.2 yrs; advanced skills in YOLO, BentoML, TensorFlow with partial JD overlap. High recruiter engagement (0.90 response rate); strong github activity (86)."
+  },
+  {
+    "candidate_id":"CAND_0092706",
+    "rank":65,
+    "score":0.655337,
+    "reasoning":"AI Research Engineer with 5.8 yrs; advanced skills in Weights & Biases, Sentence Transformers, MLOps with partial JD overlap. High recruiter engagement (0.78 response rate); strong github activity (65); saved by 47 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0068932",
+    "rank":66,
+    "score":0.655177,
+    "reasoning":"ML Engineer with 5.2 yrs and direct JD-relevant expertise in RAG. High recruiter engagement (0.82 response rate); strong github activity (70); saved by 26 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0037566",
+    "rank":67,
+    "score":0.653891,
+    "reasoning":"Machine Learning Engineer with 6.9 yrs and direct JD-relevant expertise in NLP. Moderate recruiter engagement (0.50 response rate); strong github activity (73); saved by 23 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0069905",
+    "rank":68,
+    "score":0.653326,
+    "reasoning":"Applied ML Engineer with 6.6 yrs; advanced skills in Speech Recognition, Image Classification, TensorFlow with partial JD overlap. High recruiter engagement (0.78 response rate); saved by 57 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0011125",
+    "rank":69,
+    "score":0.653275,
+    "reasoning":"Junior ML Engineer with 6.6 yrs and direct JD-relevant expertise in Information Retrieval, Embeddings, Milvus. Moderate recruiter engagement (0.58 response rate); strong github activity (84)."
+  },
+  {
+    "candidate_id":"CAND_0052195",
+    "rank":70,
+    "score":0.653236,
+    "reasoning":"Computer Vision Engineer with 6.3 yrs and direct JD-relevant expertise in Information Retrieval. Moderate recruiter engagement (0.69 response rate); strong github activity (71); saved by 45 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0090584",
+    "rank":71,
+    "score":0.653188,
+    "reasoning":"ML Engineer with 5.1 yrs and direct JD-relevant expertise in OpenSearch, RAG. Moderate recruiter engagement (0.64 response rate); strong github activity (83); saved by 34 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0054100",
+    "rank":72,
+    "score":0.65206,
+    "reasoning":"Junior ML Engineer with 6.0 yrs and direct JD-relevant expertise in Vector Search. High recruiter engagement (0.79 response rate); strong github activity (73); saved by 30 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0084819",
+    "rank":73,
+    "score":0.651673,
+    "reasoning":"Search Engineer with 4.5 yrs and direct JD-relevant expertise in Semantic Search. High recruiter engagement (0.74 response rate); saved by 50 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0047492",
+    "rank":74,
+    "score":0.651403,
+    "reasoning":"ML Engineer with 4.8 yrs and direct JD-relevant expertise in Information Retrieval. High recruiter engagement (0.71 response rate); strong github activity (65); saved by 42 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0099806",
+    "rank":75,
+    "score":0.650444,
+    "reasoning":"AI Engineer with 4.6 yrs and direct JD-relevant expertise in RAG, pgvector. High recruiter engagement (0.76 response rate); strong github activity (87)."
+  },
+  {
+    "candidate_id":"CAND_0081846",
+    "rank":76,
+    "score":0.6497,
+    "reasoning":"Lead AI Engineer with 6.7 yrs and direct JD-relevant expertise in pgvector. High recruiter engagement (0.73 response rate); saved by 62 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0080534",
+    "rank":77,
+    "score":0.64947,
+    "reasoning":"ML Engineer with 3.8 yrs and direct JD-relevant expertise in Elasticsearch, OpenSearch. High recruiter engagement (0.91 response rate); strong github activity (81); saved by 24 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0077285",
+    "rank":78,
+    "score":0.64946,
+    "reasoning":"Recommendation Systems Engineer with 5.5 yrs and direct JD-relevant expertise in Pinecone, Milvus. Moderate recruiter engagement (0.56 response rate); strong github activity (76); saved by 65 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0027801",
+    "rank":79,
+    "score":0.647357,
+    "reasoning":"NLP Engineer with 7.4 yrs and direct JD-relevant expertise in Vector Search. Moderate recruiter engagement (0.65 response rate); strong github activity (63); saved by 65 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0008425",
+    "rank":80,
+    "score":0.646838,
+    "reasoning":"Senior NLP Engineer with 7.8 yrs; advanced skills in Weights & Biases, TensorFlow, Prompt Engineering with partial JD overlap. Moderate recruiter engagement (0.66 response rate); saved by 55 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0043381",
+    "rank":81,
+    "score":0.645711,
+    "reasoning":"AI Research Engineer with 3.6 yrs and direct JD-relevant expertise in OpenSearch. High recruiter engagement (0.78 response rate); strong github activity (71); saved by 38 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0007009",
+    "rank":82,
+    "score":0.644956,
+    "reasoning":"Recommendation Systems Engineer with 7.9 yrs; advanced skills in Statistical Modeling, CNN, Forecasting with partial JD overlap. Moderate recruiter engagement (0.62 response rate); strong github activity (69)."
+  },
+  {
+    "candidate_id":"CAND_0064904",
+    "rank":83,
+    "score":0.644046,
+    "reasoning":"AI Engineer with 4.9 yrs; advanced skills in Hugging Face Transformers, Forecasting, MLOps with partial JD overlap. High recruiter engagement (0.78 response rate); saved by 39 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0045778",
+    "rank":84,
+    "score":0.643433,
+    "reasoning":"Senior Software Engineer (ML) with 4.4 yrs and direct JD-relevant expertise in Milvus, LLMs. High recruiter engagement (0.83 response rate); strong github activity (84); saved by 18 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0080465",
+    "rank":85,
+    "score":0.642411,
+    "reasoning":"ML Engineer with 4.2 yrs and direct JD-relevant expertise in Milvus. High recruiter engagement (0.83 response rate); strong github activity (81); saved by 46 recruiters recently; flag: high endorsements but weak skill assessment."
+  },
+  {
+    "candidate_id":"CAND_0058688",
+    "rank":86,
+    "score":0.641446,
+    "reasoning":"AI Engineer with 6.7 yrs; advanced skills in Object Detection, Computer Vision, TensorFlow with partial JD overlap. High recruiter engagement (0.74 response rate); saved by 36 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0061655",
+    "rank":87,
+    "score":0.641086,
+    "reasoning":"Machine Learning Engineer with 4.6 yrs; advanced skills in Haystack, Time Series, PyTorch with partial JD overlap. High recruiter engagement (0.88 response rate); saved by 19 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0093331",
+    "rank":88,
+    "score":0.640168,
+    "reasoning":"NLP Engineer with 16.1 yrs and direct JD-relevant expertise in Embeddings. Moderate recruiter engagement (0.41 response rate); strong github activity (74); saved by 30 recruiters recently; senior experience level supports seniority match; flag: high recruiter demand but low engagement."
+  },
+  {
+    "candidate_id":"CAND_0065195",
+    "rank":89,
+    "score":0.64012,
+    "reasoning":"Search Engineer with 5.1 yrs; advanced skills in Diffusion Models, Hugging Face Transformers, MLOps with partial JD overlap. High recruiter engagement (0.80 response rate); strong github activity (87); saved by 13 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0046353",
+    "rank":90,
+    "score":0.639772,
+    "reasoning":"ML Engineer with 6.4 yrs and direct JD-relevant expertise in FAISS. High recruiter engagement (0.73 response rate); strong github activity (77)."
+  },
+  {
+    "candidate_id":"CAND_0011643",
+    "rank":91,
+    "score":0.63938,
+    "reasoning":"AI Research Engineer with 4.2 yrs and direct JD-relevant expertise in Pinecone. High recruiter engagement (0.85 response rate); strong github activity (85); saved by 17 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0080603",
+    "rank":92,
+    "score":0.638933,
+    "reasoning":"Senior Data Engineer with 5.8 yrs and direct JD-relevant expertise in Pinecone. High recruiter engagement (0.76 response rate); saved by 28 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0040887",
+    "rank":93,
+    "score":0.638853,
+    "reasoning":"Machine Learning Engineer with 4.7 yrs and direct JD-relevant expertise in FAISS. High recruiter engagement (0.84 response rate); saved by 50 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0031143",
+    "rank":94,
+    "score":0.638178,
+    "reasoning":"ML Engineer with 5.5 yrs; advanced skills in QLoRA, Python, TTS with partial JD overlap. High recruiter engagement (0.84 response rate); strong github activity (76); saved by 25 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0088354",
+    "rank":95,
+    "score":0.635049,
+    "reasoning":"Junior ML Engineer with 6.5 yrs and direct JD-relevant expertise in OpenSearch. High recruiter engagement (0.80 response rate); strong github activity (72); saved by 24 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0065786",
+    "rank":96,
+    "score":0.635007,
+    "reasoning":"AI Specialist with 4.9 yrs; advanced skills in Learning to Rank, Kubeflow, BentoML with partial JD overlap. High recruiter engagement (0.89 response rate); strong github activity (71); saved by 32 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0094165",
+    "rank":97,
+    "score":0.63412,
+    "reasoning":"AI Research Engineer with 5.8 yrs and direct JD-relevant expertise in pgvector. High recruiter engagement (0.78 response rate); strong github activity (82); saved by 16 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0032887",
+    "rank":98,
+    "score":0.634086,
+    "reasoning":"ML Engineer with 6.1 yrs and direct JD-relevant expertise in NLP. High recruiter engagement (0.81 response rate); saved by 32 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0043304",
+    "rank":99,
+    "score":0.633753,
+    "reasoning":"Junior ML Engineer with 6.5 yrs; advanced skills in Sentence Transformers, Machine Learning, Diffusion Models with partial JD overlap. High recruiter engagement (0.75 response rate); strong github activity (68); saved by 20 recruiters recently."
+  },
+  {
+    "candidate_id":"CAND_0043384",
+    "rank":100,
+    "score":0.633745,
+    "reasoning":"Computer Vision Engineer with 5.2 yrs; advanced skills in Kubeflow, Diffusion Models, Reinforcement Learning with partial JD overlap. High recruiter engagement (0.83 response rate); strong github activity (63); saved by 48 recruiters recently."
+  }
+]

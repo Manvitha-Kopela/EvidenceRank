@@ -10,9 +10,19 @@ __pycache__/
 # Jupyter
 .ipynb_checkpoints/
 
-# Ignore only large/generated files
+# Large generated outputs
 outputs/ranked_candidates.csv
+outputs/top_100_candidates.csv
+outputs/candidate_embeddings.npy
+outputs/candidate_ids.npy
+outputs/final_submission.xlsx
+outputs/final_submission_final.xlsx
+
+# Large raw dataset
 data/raw/candidates.jsonl
+
+# Temp Office lock files
+~$*
 
 # OS files
 .DS_Store
@@ -20,5 +30,4 @@ Thumbs.db
 
 # IDE
 .vscode/
-.idea/outputs/candidate_embeddings.npy 
-outputs/candidate_ids.npy 
+.idea/

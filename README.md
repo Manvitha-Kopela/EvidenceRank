@@ -1,172 +1,292 @@
-# EvidenceRank — Trust-Aware Candidate Intelligence
+# ⚡ EvidenceRank — AI-Powered Candidate Intelligence & Ranking
+
+EvidenceRank is an AI-driven hiring intelligence system that ranks candidates the way an experienced recruiter would — not through simple keyword matching, but through semantic understanding, behavioral analysis, contradiction detection, and trust-aware scoring.
 
 ## Problem Statement
 
-Recruiters often review hundreds of profiles but still miss the right candidates because traditional Applicant Tracking Systems (ATS) rely heavily on keyword matching and static resume filters.
+Recruiters go through thousands of profiles and often miss high-quality candidates because traditional Applicant Tracking Systems (ATS) rely heavily on keyword matching.
 
-These systems fail to capture:
+This causes major problems:
+- Strong candidates get filtered out due to missing exact keywords
+- Hidden talent remains undiscovered
+- Recruiters spend excessive time manually screening profiles
+- Hiring decisions become noisy and inconsistent
 
-* Contextual role fit
-* Behavioral signals
-* Contradictions between claims and evidence
-* Hiring confidence
-
-Two candidates may appear equally qualified on paper but carry very different hiring risks.
-
----
-
-## Our Solution
-
-**EvidenceRank** is an AI-powered candidate ranking system that evaluates applicants using multiple evidence layers instead of simple keyword matching.
-
-EvidenceRank ranks candidates using:
-
-* Qualification Score
-* Behavioral Score
-* Contradiction Score
-* Hiring Confidence
-
-The system generates a ranked shortlist with explainable reasoning for every candidate.
+EvidenceRank solves this by ranking candidates based on **actual relevance**, not keyword overlap alone.
 
 ---
 
-## Core Insight
+## Key Features
 
-> Hiring is decision-making under uncertainty.
+### 🧠 Semantic Candidate Matching
+Uses sentence embeddings to understand the meaning of job descriptions and candidate profiles.
 
-Traditional ATS asks:
-
-“How similar is this resume to the job description?”
+Instead of:
+> “Does resume contain exact skill keyword?”
 
 EvidenceRank asks:
-
-“How confident should a recruiter be in hiring this candidate?”
-
----
-
-## Architecture
-
-Candidate Profiles
-↓
-Feature Engineering
-↓
-Qualification + Behavioral + Contradiction Analysis
-↓
-Fit Score + Confidence + Risk Assessment
-↓
-Ranked Candidate Shortlist
+> “Does this candidate truly fit the role?”
 
 ---
 
-## Feature Engineering
-
-### Qualification Features
-
-* Years of experience
-* Skill overlap with job description
-* Current title relevance
-
-### Behavioral Features
-
-* GitHub activity
-* Recruiter response rate
-* Interview completion rate
-* Recruiter saves
-
-### Contradiction Features
-
-* Seniority gap
-* Skill inflation
-* Demand gap
-* Availability mismatch
-
-### Confidence Features
-
-* Evidence density
-* Data completeness
-* Signal consistency
-
----
-
-## Explainability
-
-For each candidate, EvidenceRank generates:
-
-* Fit Score
-* Confidence Score
-* Supporting strengths
-* Hiring risks
-* Human-readable reasoning
+### 📄 Intelligent Job Description Parsing
+Automatically extracts:
+- Role type
+- Seniority level
+- Required skills
+- Organization style
+- Role family
 
 Example:
-
-Candidate: CAND_0088025
-
-Fit Score: 80.14
-Confidence: 77.76%
-
-Strengths:
-
-* Strong GitHub activity
-* High recruiter engagement
-* Strong AI skill alignment
-
-Risks:
-
-* Long notice period
-* Not willing to relocate
+```json
+{
+  "role_type": "ml",
+  "seniority": "principal",
+  "required_skills": ["python", "llm", "rag", "nlp", "rest"]
+}
+```
 
 ---
 
-## Results
+### 📊 Hybrid Candidate Scoring
 
-* Processed 100,000 candidate profiles
-* Generated ranked shortlist in ~11 seconds
-* Produced top 100 ranked candidates
-* Submission validated successfully
+Each candidate receives a final score using multiple signals:
+
+#### Qualification Signals
+- Semantic similarity
+- Skill overlap
+- Title relevance
+- Experience match
+
+#### Behavioral Signals
+- Recruiter engagement
+- GitHub activity
+- Response rate
+- Platform activity
+
+#### Trust Signals
+- Contradiction detection
+- Confidence scoring
+- Risk assessment
 
 ---
 
-## Repository Structure
+### 🚨 Contradiction Detection
+EvidenceRank detects suspicious profile inconsistencies such as:
+- Senior title with very low experience
+- Unrealistic skill combinations
+- Missing supporting evidence
+- Risky behavioral signals
+
+---
+
+### 💎 Hidden Gem Discovery
+Traditional ATS often misses candidates with low keyword overlap but strong semantic relevance.
+
+EvidenceRank explicitly surfaces these “hidden gems.”
+
+---
+
+### 📈 Explainable AI Ranking
+Each recommendation includes reasoning:
+
+Example:
+> Strong semantic alignment with job description; High required skill coverage; Strong recruiter engagement signals; Low hiring risk
+
+This makes the system transparent and recruiter-friendly.
+
+---
+
+# Architecture
+
+```text
+Job Description
+      ↓
+JD Parser
+      ↓
+Feature Engineering
+      ↓
+Semantic Embeddings
+      ↓
+Hybrid Scoring Engine
+      ↓
+Candidate Ranking
+      ↓
+Dashboard + Explainability
+```
+
+---
+
+# Tech Stack
+
+## AI / ML
+- Sentence Transformers (MiniLM-L6-v2)
+- Semantic Embeddings
+- Vector Similarity Ranking
+
+## Backend
+- Python
+- Pandas
+- NumPy
+
+## Dashboard
+- Streamlit
+- Plotly
+
+## Parsing
+- Rule-based NLP parser
+- Skill ontology
+
+---
+
+# Scoring Formula
+
+Final fit score combines:
+
+```text
+Fit Score =
+40% Qualification Score +
+25% Behavioral Score +
+20% Confidence Score -
+15% Contradiction Penalty
+```
+
+Risk score is calculated separately for recruiter decision support.
+
+---
+
+# Project Structure
 
 ```bash
-evidencerank/
+EvidenceRank/
 │
 ├── data/
 │   └── raw/
 │
 ├── outputs/
-│   ├── ranked_candidates.csv
 │   └── final_submission.csv
 │
 ├── src/
-│   ├── parser.py
+│   ├── dashboard.py
 │   ├── features.py
-│   ├── scorer.py
-│   ├── explain.py
+│   ├── jd_parser.py
 │   ├── rank_candidates.py
-│   ├── demo_candidate.py
-│   └── generate_submission.py
+│   └── scorer.py
 │
 ├── requirements.txt
-├── README.md
-└── .gitignore
+└── README.md
 ```
 
 ---
 
-## Tech Stack
+# Installation
 
-* Python
-* Pandas
-* NumPy
-* tqdm
+Clone repository:
+
+```bash
+git clone https://github.com/Manvitha-Kopela/EvidenceRank.git
+cd EvidenceRank
+```
+
+Create virtual environment:
+
+```bash
+python -m venv venv
+```
+
+Activate:
+
+### Windows
+```bash
+venv\Scripts\activate
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
 
 ---
 
-## Future Improvements
+# Running Candidate Ranking
 
-* Learning-to-rank models (XGBoost / LightGBM)
-* Semantic job understanding using LLMs
-* Interactive recruiter dashboard
-* Risk-aware hiring recommendations
+```bash
+cd src
+python rank_candidates.py ..\data\raw\job_description.docx
+```
+
+This generates:
+- ranked_candidates.csv
+- top_100_candidates.csv
+
+---
+
+# Running Dashboard
+
+```bash
+streamlit run src/dashboard.py
+```
+
+Dashboard includes:
+- Recruiter decision buckets
+- Hidden gems
+- Candidate comparison
+- Deep candidate analysis
+- ATS vs EvidenceRank comparison
+
+---
+
+# Output Format
+
+Submission file contains:
+
+| candidate_id | rank | score | reasoning |
+|-------------|------|-------|-----------|
+
+---
+
+# Why EvidenceRank Wins Over Traditional ATS
+
+| Feature | Traditional ATS | EvidenceRank |
+|---------|-----------------|--------------|
+| Matching | Keyword overlap | Semantic understanding |
+| Hidden gems | Missed | Found |
+| Behavioral analysis | No | Yes |
+| Explainability | Low | High |
+| Trust signals | None | Yes |
+
+---
+
+# Impact
+
+EvidenceRank helps recruiters:
+- Reduce manual screening time
+- Improve shortlist quality
+- Discover hidden talent
+- Make explainable hiring decisions
+
+---
+
+# Future Improvements
+
+- LLM-based resume summarization
+- Bias detection
+- Adaptive scoring weights
+- Interview question generation
+- Real-time recruiter feedback loop
+
+---
+
+# Team
+
+Built for **The Data & AI Challenge 2026**  
+Team: **SkillSetu**
+
+---
+
+## Final Note
+
+EvidenceRank transforms candidate ranking from **keyword filtering** into **intelligent evidence-based hiring**.
+
+**Hire smarter. Hire with evidence.**
