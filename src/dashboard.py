@@ -3,18 +3,27 @@ import pandas as pd
 import plotly.graph_objects as go
 import os
 import sys
+from parser import load_candidates
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from jd_parser import parse_job_description
-from features import contradiction_features, confidence_features, qualification_features, behavioral_features, load_embedding_cache
+from features import (
+    initialize_features,
+    contradiction_features,
+    confidence_features,
+    qualification_features,
+    behavioral_features,
+    load_embedding_cache
+)
 from parser import load_candidates
 from scorer import calculate_scores, calculate_risk
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_PATH = os.path.join(BASE_DIR, "data", "raw", "candidates.jsonl")
-JD_PATH = os.path.join(BASE_DIR, "data", "raw", "job_backend.docx")
-RESULTS_PATH = os.path.join(BASE_DIR, "outputs", "final_submission.csv")
+JD_PATH = os.path.join(BASE_DIR, "data", "raw", "job_description.docx")
+RESULTS_PATH = os.path.join(BASE_DIR, "outputs", "ranked_candidates.csv")
+initialize_features(JD_PATH)
 
 st.set_page_config(page_title="EvidenceRank", page_icon="⚡", layout="wide", initial_sidebar_state="expanded")
 
@@ -59,13 +68,14 @@ def hire_label(fit, risk, contradictions):
     if contradictions >= 2:
         return "High Risk"
 
-    if fit >= 0.74 and risk <= 0.72:
-        return "Strong Hire"
-
     if risk > 0.85:
         return "High Risk"
 
+    if fit >= 0.65 and risk <= 0.72:
+        return "Strong Hire"
+
     return "Needs Review"
+
 def tag(style, icon, text):
     return f'<div style="display:inline-block;{style}border-radius:4px;padding:5px 10px;font-size:12px;margin:3px 3px 3px 0;">{icon} {text}</div>'
 
@@ -73,15 +83,17 @@ TAG_GREEN  = "background:#052e16;color:#4ade80;border:1px solid #166534;"
 TAG_ORANGE = "background:#1c1917;color:#fb923c;border:1px solid #7c2d12;"
 TAG_RED    = "background:#1c0a0a;color:#f87171;border:1px solid #7f1d1d;"
 
-JD_SKILLS = {
-    "python":       ["python"],
-    "rag":          ["rag", "retrieval augmented", "retrieval-augmented"],
-    "vector db":    ["milvus", "pinecone", "faiss", "weaviate", "qdrant", "vector db", "vector database"],
-    "llm":          ["llm", "large language", "gpt", "claude", "gemini"],
-    "embeddings":   ["embedding", "sentence-transformer", "minilm", "ada"],
-    "nlp":          ["nlp", "natural language", "spacy", "huggingface", "transformers"],
-    "ranking":      ["ranking", "reranking", "bm25", "colbert"],
-    "retrieval":    ["retrieval", "dense retrieval", "sparse retrieval", "semantic search"],
+SKILL_ALIASES = {
+    "postgresql": ["postgres", "postgresql", "psql"],
+    "aws": ["aws", "amazon web services"],
+    "kubernetes": ["kubernetes", "k8s"],
+    "machine learning": ["machine learning", "ml"],
+    "artificial intelligence": ["ai", "artificial intelligence"],
+    "microservices": ["microservices", "microservice"],
+    "llm": ["llm", "large language model", "gpt", "claude", "gemini"],
+    "rag": ["rag", "retrieval augmented generation", "retrieval-augmented"],
+    "nlp": ["nlp", "natural language processing"],
+    "rest": ["rest", "rest api", "restful api", "api development"]
 }
 
 
@@ -100,6 +112,16 @@ def load_jd():
     return parse_job_description(JD_PATH)
 
 jd = load_jd()
+JD_SKILLS = {}
+
+for skill in jd["required_skills"]:
+    normalized = skill.lower().strip()
+
+    if normalized in SKILL_ALIASES:
+        JD_SKILLS[normalized] = SKILL_ALIASES[normalized]
+    else:
+        JD_SKILLS[normalized] = [normalized]
+st.cache_data.clear()
 df = load_results()
 candidate_map = load_all_data()
 candidate_ids = df["candidate_id"].tolist()
@@ -132,14 +154,14 @@ def find_hidden_gems(candidate_map, df, n=5):
         c    = contradiction_features(cand)
         risk = calculate_risk(cand)
         # Hidden gem criteria: strong semantic + strong behavior + low keyword overlap
-        if q["semantic_score"] > 0.52 and b["response_rate"] > 0.65 and q["skill_overlap"] < 0.5 and c["contradiction_score"] == 0:
+        if q["semantic_score"] > 0.52 and b["behavior_score"] > 0.65 and q["skill_overlap"] < 0.5 and c["contradiction_score"] == 0:
             gems.append({
                 "candidate_id": cid,
                 "rank": rank_val,
                 "semantic": round(q["semantic_score"], 3),
-                "behavioral": round(b["response_rate"], 2),
+                "behavioral": round(b["behavior_score"], 2),
                 "skill_overlap": round(q["skill_overlap"], 2),
-                "fit": float(row.iloc[0]["score"]),
+                "fit": float(row.iloc[0]["fit_score"]),
                 "risk": risk,
                 "title": cand["profile"].get("current_title", ""),
                 "years": cand["profile"].get("years_of_experience", 0),
@@ -168,10 +190,10 @@ with st.sidebar:
 st.markdown('<div class="page-header"><div class="page-title">Candidate <span>Intelligence</span> Dashboard</div><div class="page-subtitle">Semantic fit · Behavioral signals · Contradiction detection · Evidence-based ranking</div></div>', unsafe_allow_html=True)
 
 # ── Summary metrics ───────────────────────────────────────────────────────────
-avg_score = df.head(100)["score"].mean()
+avg_score = df.head(100)["fit_score"].mean()
 col1, col2, col3, col4 = st.columns(4)
 with col1:
-    st.markdown(f'<div class="metric-card"><div class="metric-value metric-accent">{df.iloc[0]["score"]:.3f}</div><div class="metric-label">Top Score</div></div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="metric-card"><div class="metric-value metric-accent">{df.iloc[0]["fit_score"]:.3f}</div><div class="metric-label">Top Score</div></div>', unsafe_allow_html=True)
 with col2:
     st.markdown(f'<div class="metric-card"><div class="metric-value">{avg_score:.3f}</div><div class="metric-label">Avg Top-100 Score</div></div>', unsafe_allow_html=True)
 with col3:
@@ -190,7 +212,7 @@ for _, row in df.head(100).iterrows():
         continue
     c_feat = contradiction_features(cand)
     r_feat = calculate_risk(cand)
-    fit    = float(row["score"])
+    fit = float(row["fit_score"])
     contras = int(c_feat["contradiction_score"])
     label = hire_label(fit, r_feat, contras)
     entry = {"id": row["candidate_id"], "fit": fit, "label": label}
@@ -286,7 +308,7 @@ for _, row in df.head(20).iterrows():
         continue
     c_feat  = contradiction_features(cand)
     r_score = calculate_risk(cand)
-    fit = float(row["score"])
+    fit = float(row["fit_score"])
     contras = int(c_feat["contradiction_score"])
 
     label_html = hire_label(fit, r_score, contras)
@@ -337,10 +359,8 @@ if risk > 0.6:
 
 if not relocate:
     why_review.append("Relocation concern")
-if not relocate:
-    why_review.append("Relocation concern")
 
-fit            = float(candidate_row["score"])
+fit = float(row["fit_score"])
 rank_val       = int(candidate_row["rank"])
 contradictions = int(c["contradiction_score"])
 confidence_val = float(conf["evidence_density"])
@@ -448,7 +468,7 @@ with col_right:
 st.markdown("<br>", unsafe_allow_html=True)
 st.markdown('<p style="font-size:12px;font-weight:600;color:#94a3b8;text-transform:uppercase;letter-spacing:1.5px;">Score Breakdown</p>', unsafe_allow_html=True)
 qual    = round(q["semantic_score"]*0.35 + q["skill_overlap"]*0.20 + q["title_score"]*0.20, 3)
-beh     = round(b["github_score"]*0.35 + b["response_rate"]*0.25 + b["completion_rate"]*0.20 + b["recruiter_saves"]*0.20, 3)
+beh = round(b["behavior_score"], 3)
 penalty = round(min(c["contradiction_score"]/5, 1)*0.25, 3)
 names  = ["Semantic Fit", "Behavioral", "Confidence"]
 vals   = [qual, beh, confidence_val]
@@ -482,9 +502,9 @@ with col_a:
         strengths.append("Staff-level seniority match")
     if q["semantic_score"] > 0.55:
         strengths.append("Strong semantic JD alignment")
-    if b["response_rate"] > 0.7:
+    if b["behavior_score"] > 0.7:
         strengths.append("High recruiter engagement")
-    if b["github_score"] > 0.6:
+    if b["behavior_score"] > 0.6:
         strengths.append("Active GitHub presence")
     if fit > 0.70:
         strengths.append("Top-tier overall fit")
@@ -527,18 +547,18 @@ confa, confb = confidence_features(fa), confidence_features(fb)
 
 metrics_data = {
     "Metric": ["Rank","Fit Score","Semantic Match","Skill Overlap","Response Rate","GitHub Score","Confidence","Contradictions"],
-    compare1: [int(cand_a["rank"]), f"{float(cand_a['score'])*100:.1f}%", f"{qa['semantic_score']:.3f}", f"{qa['skill_overlap']:.3f}", f"{ba['response_rate']:.2f}", f"{ba['github_score']:.2f}", f"{confa['evidence_density']*100:.1f}%", int(ca["contradiction_score"])],
-    compare2: [int(cand_b["rank"]), f"{float(cand_b['score'])*100:.1f}%", f"{qb['semantic_score']:.3f}", f"{qb['skill_overlap']:.3f}", f"{bb['response_rate']:.2f}", f"{bb['github_score']:.2f}", f"{confb['evidence_density']*100:.1f}%", int(cb["contradiction_score"])],
+    compare1: [int(cand_a["rank"]), f"{float(cand_a['fit_score'])*100:.1f}%", f"{qa['semantic_score']:.3f}", f"{qa['skill_overlap']:.3f}", f"{ba['behavior_score']:.2f}", f"{ba['behavior_score']:.2f}", f"{confa['evidence_density']*100:.1f}%", int(ca["contradiction_score"])],
+    compare2: [int(cand_b["rank"]), f"{float(cand_b['fit_score'])*100:.1f}%", f"{qb['semantic_score']:.3f}", f"{qb['skill_overlap']:.3f}", f"{bb['behavior_score']:.2f}", f"{bb['behavior_score']:.2f}", f"{confb['evidence_density']*100:.1f}%", int(cb["contradiction_score"])],
 }
 st.dataframe(pd.DataFrame(metrics_data), use_container_width=True, hide_index=True)
 
-winner = compare1 if float(cand_a["score"]) >= float(cand_b["score"]) else compare2
+winner = compare1 if float(cand_a["fit_score"]) >= float(cand_b["fit_score"]) else compare2
 reasons = []
-if abs(float(cand_a["score"]) - float(cand_b["score"])) * 100 > 0.01:
-    reasons.append(f"Higher fit score by {abs(float(cand_a['score'])-float(cand_b['score']))*100:.2f}%")
+if abs(float(cand_a["fit_score"]) - float(cand_b["fit_score"])) * 100 > 0.01:
+    reasons.append(f"Higher fit score by {abs(float(cand_a['fit_score'])-float(cand_b['fit_score']))*100:.2f}%")
 if (compare1==winner and qa["semantic_score"]>qb["semantic_score"]) or (compare2==winner and qb["semantic_score"]>qa["semantic_score"]):
     reasons.append("Stronger semantic alignment with JD")
-if (compare1==winner and ba["response_rate"]>bb["response_rate"]) or (compare2==winner and bb["response_rate"]>ba["response_rate"]):
+if (compare1==winner and ba["behavior_score"]>bb["behavior_score"]) or (compare2==winner and bb["behavior_score"]>ba["behavior_score"]):
     reasons.append("Higher recruiter engagement signal")
 if (compare1==winner and ca["contradiction_score"]<cb["contradiction_score"]) or (compare2==winner and cb["contradiction_score"]<ca["contradiction_score"]):
     reasons.append("Fewer profile contradictions")

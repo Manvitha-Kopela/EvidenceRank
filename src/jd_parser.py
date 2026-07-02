@@ -1,5 +1,5 @@
 from docx import Document
-import re
+from parser.spacy_parser import extract_skills_spacy, extraction_confidence
 
 
 def extract_text(docx_path):
@@ -11,6 +11,8 @@ def extract_text(docx_path):
             text.append(para.text.strip())
 
     return "\n".join(text)
+
+
 def extract_job_title(text):
     lines = text.split("\n")
 
@@ -22,52 +24,93 @@ def extract_job_title(text):
     return "Unknown Role"
 
 
+def extract_seniority(text):
+    lower = text.lower()
+
+    if "principal" in lower:
+        return "principal"
+    elif "staff" in lower:
+        return "staff"
+    elif "senior" in lower:
+        return "senior"
+    elif "junior" in lower:
+        return "junior"
+    elif "intern" in lower:
+        return "intern"
+
+    return "mid"
+
+
 def parse_job_description(docx_path):
     text = extract_text(docx_path)
     lower_text = text.lower()
+
     job_title = extract_job_title(text)
+    seniority = extract_seniority(text)
 
-    skill_keywords = [
-        # AI
-        "python", "machine learning", "deep learning", "nlp",
-        "rag", "llm", "embeddings", "vector database",
-        "retrieval", "ranking", "pytorch", "tensorflow",
+    # -------- spaCy skill extraction --------
+    skills = extract_skills_spacy(text)
+    confidence = extraction_confidence(skills)
 
-        # Backend
-        "sql", "postgresql", "mysql", "redis", "kafka",
-        "aws", "gcp", "azure", "docker", "kubernetes",
-        "microservices", "distributed systems",
-        "api", "rest", "fastapi", "django",
+    if confidence < 0.5:
+        print("Low confidence parser -> LLM fallback needed")
 
-        # Frontend
-        "react", "javascript", "typescript",
+    # -------- role detection --------
+    role_type = "general"
+    role_family = "general"
 
-        # Marketing
-        "seo", "sem", "google analytics",
-        "content marketing", "campaign management",
+    if any(word in lower_text for word in [
+        "machine learning engineer",
+        "ml engineer",
+        "ai engineer",
+        "data scientist"
+    ]):
+        role_type = "ml"
+        role_family = "data_ai"
 
-        # Sales
-        "crm", "lead generation",
-        "negotiation", "sales strategy"
-    ]
+    elif any(word in lower_text for word in [
+        "backend engineer",
+        "backend developer",
+        "software engineer",
+        "platform engineer",
+        "devops"
+    ]):
+        role_type = "backend"
+        role_family = "engineering"
 
-    found_skills = []
+    elif any(word in lower_text for word in [
+        "frontend engineer",
+        "frontend developer",
+        "ui engineer"
+    ]):
+        role_type = "frontend"
+        role_family = "engineering"
 
-    for skill in skill_keywords:
-        if skill in lower_text:
-            found_skills.append(skill)
+    elif any(word in lower_text for word in [
+        "marketing manager",
+        "seo",
+        "digital marketing"
+    ]):
+        role_type = "marketing"
+        role_family = "marketing"
 
-    seniority = "mid"
+    elif any(word in lower_text for word in [
+        "sales manager",
+        "account executive",
+        "business development"
+    ]):
+        role_type = "sales"
+        role_family = "sales"
 
-    if "staff" in lower_text or "principal" in lower_text:
-        seniority = "staff"
-    elif "senior" in lower_text:
-        seniority = "senior"
-    elif "intern" in lower_text:
-        seniority = "intern"
+    elif "retrieval" in lower_text or "search" in lower_text:
+        role_type = "retrieval"
+        role_family = "data_ai"
 
-    
+    elif "recommendation" in lower_text:
+        role_type = "recommendation"
+        role_family = "data_ai"
 
+    # -------- company style --------
     company_style = "enterprise"
 
     if "startup" in lower_text:
@@ -75,23 +118,15 @@ def parse_job_description(docx_path):
 
     return {
         "job_title": job_title,
-        "required_skills": found_skills,
+        "required_skills": skills,
         "seniority": seniority,
-        "company_style": company_style
+        "role_type": role_type,
+        "role_family": role_family,
+        "company_style": company_style,
+        "parser_confidence": confidence
     }
-def extract_job_title(text):
-    lines = text.split("\n")
-
-    for line in lines:
-        line = line.strip()
-        if len(line) > 3 and len(line) < 100:
-            return line
-
-    return "Unknown Role"
 
 
 if __name__ == "__main__":
     jd = parse_job_description("../data/raw/job_description.docx")
-    print("Job title:", jd["job_title"])
-    print("Skills:", jd["required_skills"])
-    print("Seniority:", jd["seniority"])
+    print(jd)
